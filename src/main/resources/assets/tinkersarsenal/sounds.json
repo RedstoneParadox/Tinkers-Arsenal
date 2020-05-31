@@ -1,0 +1,8 @@
+{
+  "boomstick_shot": {
+    "category": "player",
+    "sounds": [
+      "tinkersarsenal:boomstick_shot"
+    ]
+  }
+}

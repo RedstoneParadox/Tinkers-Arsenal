@@ -1,0 +1,10 @@
+{
+  "parent": "item/generated",
+    "textures": {
+        "layer0": "tinkersarsenal:items/parts/bullet"
+    },
+    "offset": {
+        "x": 0,
+        "y": 0
+    }
+}

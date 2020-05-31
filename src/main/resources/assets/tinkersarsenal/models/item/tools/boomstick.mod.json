@@ -1,0 +1,21 @@
+{
+  "textures": {
+    "bane_spider": "tinkersarsenal:items/boomstick/mod_bane_spider",
+    "beheading": "tinkersarsenal:items/boomstick/mod_beheading",
+    "diamond": "tinkersarsenal:items/boomstick/mod_diamond",
+    "emerald": "tinkersarsenal:items/boomstick/mod_emerald",
+    "fiery": "tinkersarsenal:items/boomstick/mod_fiery",
+    "glowing": "tinkersarsenal:items/boomstick/mod_glowing",
+    "haste": "tinkersarsenal:items/boomstick/mod_haste",
+    "knockback": "tinkersarsenal:items/boomstick/mod_knockback",
+    "mending_moss": "tinkersarsenal:items/boomstick/mod_mending_moss",
+    "necrotic": "tinkersarsenal:items/boomstick/mod_necrotic",
+    "reinforced": "tinkersarsenal:items/boomstick/mod_reinforced",
+    "sharpness": "tinkersarsenal:items/boomstick/mod_sharpness",
+    "shulking": "tinkersarsenal:items/boomstick/mod_shulking",
+    "silk": "tinkersarsenal:items/boomstick/mod_silk",
+    "smite": "tinkersarsenal:items/boomstick/mod_smite",
+    "soulbound": "tinkersarsenal:items/boomstick/mod_soulbound",
+    "web": "tinkersarsenal:items/boomstick/mod_web"
+  }
+}

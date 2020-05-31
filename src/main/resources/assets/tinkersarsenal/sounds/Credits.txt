@@ -1,0 +1,4 @@
+All sounds that were not in ogg format were transcoded to Ogg Vorbis.
+
+Boomstick firing sound:
+"Musket Shot" by mlsulli (https://freesound.org/people/mlsulli/sounds/234869/)

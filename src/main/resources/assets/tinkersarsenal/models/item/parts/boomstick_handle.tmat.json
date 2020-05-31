@@ -1,0 +1,10 @@
+{
+  "parent": "item/generated",
+    "textures": {
+        "layer0": "tinkersarsenal:items/boomstick/boomstick_handle"
+    },
+    "offset": {
+        "x": -4,
+        "y": -4
+    }
+}
