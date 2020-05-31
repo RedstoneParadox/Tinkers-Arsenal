@@ -20,6 +20,7 @@ import slimeknights.tconstruct.tools.TinkerTools;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.ToLongBiFunction;
 
 /**
  * Created by RedstoneParadox on 9/12/2018.
@@ -32,6 +33,10 @@ public class ToolsBase {
 
     public void initToolParts(IForgeRegistry<Item> registry) {
 
+    }
+
+    protected static ToolPart toolPart(int cost) {
+        return new ToolPart(Material.VALUE_Ingot * cost);
     }
 
     protected static ToolPart registerToolPart(ToolPart part, String name, int cost, IForgeRegistry<Item> registry) {

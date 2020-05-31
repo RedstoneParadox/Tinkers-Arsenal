@@ -52,7 +52,6 @@ public class TATools extends ToolsBase{
 
     @Override
     public void initToolGUIs() {
-        if (true) return;
         ToolBuildGuiInfo boomstickInfo = new ToolBuildGuiInfo(boomstick);
         boomstickInfo.addSlotPosition(32 + 12, 41 + 12);
         boomstickInfo.addSlotPosition(32 - 12, 41 - 12);

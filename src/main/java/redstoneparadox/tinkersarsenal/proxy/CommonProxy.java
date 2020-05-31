@@ -47,13 +47,8 @@ public class CommonProxy {
         new ModuleTF("thermalfoundation", switchboard, database);
 
         ArrayList args = new ArrayList();
+        args.add(Loader.isModLoaded("conarm"));
 
-        if (Loader.isModLoaded("conarm")) {
-            args.add(new Boolean(true));
-        }
-        else {
-            args.add(new Boolean(false));
-        }
         switchboard.sendSignal("initModules", args);
         switchboard.removeSignal("initModules");
 
