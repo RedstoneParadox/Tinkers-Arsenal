@@ -33,7 +33,7 @@ public class TATools extends ToolsBase{
         boomstickHandle = registerToolPart(boomstickHandle, "boomstick_handle", 2, registry);
         bayonet = registerToolPart(bayonet, "bayonet", 2, registry);
         bullet = registerToolPart(bullet, "bullet", 1, registry);
-        // bulletShell = registerToolPart(bulletShell, "bullet_shell", 1, registry);
+        bulletShell = registerToolPart(bulletShell, "bullet_shell", 1, registry);
 
         initTools(registry);
     }
@@ -61,7 +61,7 @@ public class TATools extends ToolsBase{
 
         ToolBuildGuiInfo boomstickShotInfo = new ToolBuildGuiInfo(boomstickShot);
         boomstickShotInfo.addSlotPosition(32 - 12, 41 + 12);
-        boomstickShotInfo.addSlotPosition(32 - (12 + 16), 41 + 12);
+        boomstickShotInfo.addSlotPosition(32 - 34, 41 + 12);
         TinkerRegistryClient.addToolBuilding(boomstickShotInfo);
 
         ToolBuildGuiInfo shearInfo = new ToolBuildGuiInfo(shears);

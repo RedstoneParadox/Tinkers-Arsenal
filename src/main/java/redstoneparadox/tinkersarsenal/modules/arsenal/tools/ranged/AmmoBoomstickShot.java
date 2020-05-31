@@ -24,12 +24,12 @@ import java.util.List;
  */
 public class AmmoBoomstickShot extends ProjectileCore {
 
-    private static PartMaterialType bulletPMT = new PartMaterialType(TATools.bullet, MaterialTypes.HEAD, MaterialTypes.EXTRA, MaterialTypes.PROJECTILE);
+    private static PartMaterialType bulletPMT = new PartMaterialType(TATools.bullet, MaterialTypes.HEAD, MaterialTypes.PROJECTILE);
 
     public AmmoBoomstickShot() {
-        super(bulletPMT, bulletPMT);
+        super(bulletPMT, PartMaterialType.extra(TATools.bulletShell));
 
-        this.setRegistryName("boomstick_shot").setUnlocalizedName("boomstick_shot");
+        this.setRegistryName("boomstick_shot").setTranslationKey("boomstick_shot");
 
         addCategory(Category.NO_MELEE, Category.PROJECTILE);
     }

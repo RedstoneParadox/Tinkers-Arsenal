@@ -31,7 +31,7 @@ public class ToolShears extends TinkerToolCore {
 
     public ToolShears() {
         super(PartMaterialType.head(TinkerTools.knifeBlade), PartMaterialType.handle(TinkerTools.binding));
-        this.setRegistryName("toolshears").setUnlocalizedName("toolshears");
+        this.setRegistryName("toolshears").setTranslationKey("toolshears");
 
         addCategory(Category.NO_MELEE);
         setHarvestLevel("shears", 0);
