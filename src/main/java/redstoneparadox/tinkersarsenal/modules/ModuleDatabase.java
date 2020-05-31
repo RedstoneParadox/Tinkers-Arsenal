@@ -1,7 +1,7 @@
 package redstoneparadox.tinkersarsenal.modules;
 
-import redstoneparadox.tinkersarsenal.misc.TAMaterial;
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
+import redstoneparadox.tinkersarsenal.misc.TAMaterial;
 
 import java.util.HashMap;
 import java.util.Map;

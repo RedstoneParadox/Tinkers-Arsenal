@@ -64,7 +64,7 @@ dependencies {
     deobfCompile "slimeknights:TConstruct:1.12.2-2.13.0.183"
 
     compile files('lib/conarm-1.12.2-1.2.5.4.jar')
-    compile files('lib/libraryparadox-1.0.0.jar')
+    //compile files('lib/libraryparadox-1.0.0.jar')
 }
 
 processResources {

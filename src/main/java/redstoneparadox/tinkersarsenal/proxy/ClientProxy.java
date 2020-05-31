@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import redstoneparadox.tinkersarsenal.entities.TAEntities;
 import redstoneparadox.tinkersarsenal.events.TARenderEvents;
+import redstoneparadox.tinkersarsenal.modules.Modules;
 import slimeknights.tconstruct.common.ModelRegisterUtil;
 import slimeknights.tconstruct.library.tools.IToolPart;
 import slimeknights.tconstruct.library.tools.ToolCore;
@@ -21,7 +22,6 @@ import slimeknights.tconstruct.library.tools.ToolCore;
 public class ClientProxy extends CommonProxy {
     @Override
     public void preInit(FMLPreInitializationEvent e) {
-        switchboard.addSignal("initToolGUIs");
         super.preInit(e);
         TAEntities.initModels();
         MinecraftForge.EVENT_BUS.register(new TARenderEvents());
@@ -43,7 +43,6 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void postInit(FMLPostInitializationEvent e) {
-        switchboard.sendSignal("initToolGUIs", null);
-        switchboard.removeSignal("initToolGUIs");
+        Modules.initToolGUIs();
     }
 }

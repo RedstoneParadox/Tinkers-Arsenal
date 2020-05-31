@@ -1,19 +1,18 @@
 package redstoneparadox.tinkersarsenal.modules.thermalfoundation;
 
-import redstoneparadox.libraryparadox.signals.Switchboard;
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
 import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
-import redstoneparadox.tinkersarsenal.modules.base.ModuleBase;
+import redstoneparadox.tinkersarsenal.modules.base.Module;
 import redstoneparadox.tinkersarsenal.modules.thermalfoundation.materials.TFMaterials;
 
 /**
  * Created by RedstoneParadox on 8/29/2018.
  */
-public class ModuleTF extends ModuleBase{
+public class ModuleTF extends Module {
 
 
-    public ModuleTF(String modID, Switchboard switchboardClass, ModuleDatabase materialDatabase) {
-        super(modID, switchboardClass, materialDatabase);
+    public ModuleTF(ModuleDatabase materialDatabase) {
+        super(materialDatabase);
     }
 
     @Override

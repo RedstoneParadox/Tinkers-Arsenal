@@ -1,9 +1,8 @@
 package redstoneparadox.tinkersarsenal.modules.oredict;
 
-import redstoneparadox.libraryparadox.signals.Switchboard;
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
 import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
-import redstoneparadox.tinkersarsenal.modules.base.ModuleBase;
+import redstoneparadox.tinkersarsenal.modules.base.Module;
 import redstoneparadox.tinkersarsenal.modules.oredict.materials.OreArmorMaterials;
 import redstoneparadox.tinkersarsenal.modules.oredict.materials.OreMaterials;
 import redstoneparadox.tinkersarsenal.modules.oredict.traits.tooltraits.OreToolTraits;
@@ -11,10 +10,10 @@ import redstoneparadox.tinkersarsenal.modules.oredict.traits.tooltraits.OreToolT
 /**
  * Created by RedstoneParadox on 9/11/2018.
  */
-public class ModuleOre extends ModuleBase {
+public class ModuleOre extends Module {
 
-    public ModuleOre(String modID, Switchboard switchboardClass, ModuleDatabase materialDatabase) {
-        super(modID, switchboardClass, materialDatabase);
+    public ModuleOre(ModuleDatabase materialDatabase) {
+        super(materialDatabase);
     }
 
     @Override

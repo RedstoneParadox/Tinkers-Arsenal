@@ -5,7 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
-import redstoneparadox.libraryparadox.geometry.VectorObject;
+import redstoneparadox.tinkersarsenal.geometry.Vector2;
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.TinkerRegistryClient;
@@ -20,7 +20,6 @@ import slimeknights.tconstruct.tools.TinkerTools;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.ToLongBiFunction;
 
 /**
  * Created by RedstoneParadox on 9/12/2018.
@@ -71,12 +70,12 @@ public class ToolsBase {
 
     }
 
-    protected static void registerToolGUI(ToolCore toolCore, ArrayList<VectorObject> vectorObjects) {
+    protected static void registerToolGUI(ToolCore toolCore, ArrayList<Vector2> vector2s) {
         ToolBuildGuiInfo info = new ToolBuildGuiInfo(toolCore);
 
-        for (int i = 0; i < vectorObjects.size(); i++) {
-            int xPos = vectorObjects.get(i).getXLength();
-            int yPos = vectorObjects.get(i).getYLength();
+        for (int i = 0; i < vector2s.size(); i++) {
+            int xPos = vector2s.get(i).getXLength();
+            int yPos = vector2s.get(i).getYLength();
 
             info.addSlotPosition(xPos, yPos);
         }

@@ -15,7 +15,6 @@ import redstoneparadox.tinkersarsenal.proxy.CommonProxy;
         name = TAProperties.MOD_NAME,
         version = TAProperties.VERSION,
         dependencies = "required-after:tconstruct@[1.12.2-2.10.1.87,);" +
-                "required-after:libraryparadox;" +
                 "after:conarm;" +
                 "after:tinkerscompendium;" +
                 "after:plustic;" +

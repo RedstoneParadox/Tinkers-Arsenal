@@ -2,8 +2,8 @@ package redstoneparadox.tinkersarsenal.modules.base.materials;
 
 
 import net.minecraftforge.fluids.Fluid;
-import redstoneparadox.tinkersarsenal.misc.TAConfig;
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
+import redstoneparadox.tinkersarsenal.misc.TAConfig;
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
 import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
 import slimeknights.tconstruct.library.TinkerRegistry;

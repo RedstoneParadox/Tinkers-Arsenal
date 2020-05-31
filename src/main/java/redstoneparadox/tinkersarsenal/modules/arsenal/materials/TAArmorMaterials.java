@@ -1,7 +1,7 @@
 package redstoneparadox.tinkersarsenal.modules.arsenal.materials;
 
-import redstoneparadox.tinkersarsenal.misc.TAMaterial;
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
+import redstoneparadox.tinkersarsenal.misc.TAMaterial;
 import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
 import redstoneparadox.tinkersarsenal.modules.arsenal.traits.armortraits.TAArmorTraits;
 import redstoneparadox.tinkersarsenal.modules.base.materials.ArmorMaterialsBase;
