@@ -40,7 +40,7 @@ public class ToolsBase {
 
     protected static ToolPart registerToolPart(ToolPart part, String name, int cost, IForgeRegistry<Item> registry) {
         part = new ToolPart(Material.VALUE_Ingot * cost);
-        part.setRegistryName(name);
+        part.setRegistryName(name).setUnlocalizedName(name);
         registry.register(part);
         TinkerRegistry.registerToolPart(part);
         TinkersArsenal.proxy.registerToolPartModel(part);

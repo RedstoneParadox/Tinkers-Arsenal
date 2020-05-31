@@ -46,7 +46,7 @@ public class ToolBoomstick extends BowCore implements ICustomCrosshairUser{
                 PartMaterialType.bow(TATools.boomstickBarrel),
                 PartMaterialType.head(TATools.bayonet));
 
-        this.setRegistryName("boomstick");
+        this.setRegistryName("boomstick").setUnlocalizedName("boomstick");
 
         this.addPropertyOverride(PROPERTY_PULL_PROGRESS, pullProgressPropertyGetter);
         this.addPropertyOverride(PROPERTY_IS_PULLING, isPullingPropertyGetter);

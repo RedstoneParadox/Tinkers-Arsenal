@@ -29,7 +29,7 @@ public class AmmoBoomstickShot extends ProjectileCore {
     public AmmoBoomstickShot() {
         super(bulletPMT, bulletPMT);
 
-        this.setRegistryName("boomstick_shot");
+        this.setRegistryName("boomstick_shot").setUnlocalizedName("boomstick_shot");
 
         addCategory(Category.NO_MELEE, Category.PROJECTILE);
     }
