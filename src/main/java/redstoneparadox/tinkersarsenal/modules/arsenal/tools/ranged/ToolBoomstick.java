@@ -203,8 +203,8 @@ public class ToolBoomstick extends BowCore implements ICustomCrosshairUser{
     public ProjectileLauncherNBT buildTagData(List<Material> materials) {
         ProjectileLauncherNBT data = new ProjectileLauncherNBT();
         HandleMaterialStats handle = materials.get(0).getStatsOrUnknown(MaterialTypes.HANDLE);
-        BowMaterialStats barrel = materials.get(0).getStatsOrUnknown(MaterialTypes.BOW);
-        HeadMaterialStats bayonet = materials.get(1).getStatsOrUnknown(MaterialTypes.HEAD);
+        BowMaterialStats barrel = materials.get(1).getStatsOrUnknown(MaterialTypes.BOW);
+        HeadMaterialStats bayonet = materials.get(2).getStatsOrUnknown(MaterialTypes.HEAD);
 
         data.handle(handle);
         data.limb(barrel);

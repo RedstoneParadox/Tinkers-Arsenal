@@ -27,7 +27,7 @@ public class AmmoBoomstickShot extends ProjectileCore {
     private static PartMaterialType bulletPMT = new PartMaterialType(TATools.bullet, MaterialTypes.HEAD, MaterialTypes.EXTRA, MaterialTypes.PROJECTILE);
 
     public AmmoBoomstickShot() {
-        super(bulletPMT);
+        super(bulletPMT, bulletPMT);
 
         this.setRegistryName("boomstick_shot");
 
@@ -46,7 +46,7 @@ public class AmmoBoomstickShot extends ProjectileCore {
         ProjectileNBT data = new ProjectileNBT();
 
         data.head(materials.get(0).getStatsOrUnknown(MaterialTypes.HEAD));
-        data.extra(materials.get(0).getStatsOrUnknown(MaterialTypes.EXTRA));
+        data.extra(materials.get(1).getStatsOrUnknown(MaterialTypes.EXTRA));
 
         return data;
     }
