@@ -60,8 +60,8 @@ public class TATools extends ToolsBase{
         TinkerRegistryClient.addToolBuilding(boomstickInfo);
 
         ToolBuildGuiInfo boomstickShotInfo = new ToolBuildGuiInfo(boomstickShot);
-        boomstickShotInfo.addSlotPosition(32 - 12, 41 + 12);
-        boomstickShotInfo.addSlotPosition(32 - 34, 41 + 12);
+        boomstickShotInfo.addSlotPosition(32 + 20, 41 - 8);
+        boomstickShotInfo.addSlotPosition(32, 41 + 12);
         TinkerRegistryClient.addToolBuilding(boomstickShotInfo);
 
         ToolBuildGuiInfo shearInfo = new ToolBuildGuiInfo(shears);
