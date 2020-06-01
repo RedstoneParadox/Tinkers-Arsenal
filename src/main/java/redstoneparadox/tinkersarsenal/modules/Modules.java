@@ -18,8 +18,8 @@ public class Modules {
 
     public static void createModules() {
         modules.add(new ModuleArsenal(database));
-        modules.add(new ModuleOre(database));
-        if (Loader.isModLoaded("thermalfoundation")) modules.add(new ModuleTF(database));
+        // modules.add(new ModuleOre(database));
+        // if (Loader.isModLoaded("thermalfoundation")) modules.add(new ModuleTF(database));
     }
 
     public static void initModules(boolean withArmor) {
