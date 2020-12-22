@@ -12,7 +12,6 @@ import io.github.redstoneparadox.tinkersarsenal.modules.module.materials.ModuleA
 public class BaseArmorMaterials extends ModuleArmorMaterials {
     @Override
     public void initMaterials(MaterialDatabase database){
-        TinkersArsenal.logger.info("Time to suit up!");
         //Gold:
         if (isTAMaterial("gold")) {
             TAMaterial gold = database.getMaterial("gold");
@@ -20,7 +19,6 @@ public class BaseArmorMaterials extends ModuleArmorMaterials {
             addTraits(gold, BaseArmorTraits.ANTI_CORROSIVE);
             addArmorStats(gold, 8.8f, 11f, 0.1f, 5.8f, 0.0f, 4.5f);
         }
-
         //Diamond:
         if (isTAMaterial("diamond")) {
             TAMaterial diamond = database.getMaterial("diamond");

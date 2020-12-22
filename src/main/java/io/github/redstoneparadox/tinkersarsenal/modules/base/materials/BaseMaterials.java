@@ -26,7 +26,6 @@ public class BaseMaterials extends ModuleMaterials {
             gold.setRepresentativeItem(new ItemStack(Items.GOLD_INGOT));
             TinkerRegistry.addMaterial(gold);
         }
-
         //Diamond.
         if (isRegistrable("diamond")) {
             TAMaterial diamond = new TAMaterial("diamond", 0x33ebcb);
