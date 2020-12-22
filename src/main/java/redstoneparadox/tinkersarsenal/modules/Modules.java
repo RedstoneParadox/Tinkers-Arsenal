@@ -2,8 +2,8 @@ package redstoneparadox.tinkersarsenal.modules;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
-import redstoneparadox.tinkersarsenal.modules.arsenal.ModuleArsenal;
-import redstoneparadox.tinkersarsenal.modules.base.Module;
+import redstoneparadox.tinkersarsenal.modules.base.ModuleBase;
+import redstoneparadox.tinkersarsenal.modules.module.Module;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class Modules {
     private static ModuleDatabase database = new ModuleDatabase();
 
     public static void createModules() {
-        modules.add(new ModuleArsenal(database));
+        modules.add(new ModuleBase(database));
         // modules.add(new ModuleOre(database));
         // if (Loader.isModLoaded("thermalfoundation")) modules.add(new ModuleTF(database));
     }

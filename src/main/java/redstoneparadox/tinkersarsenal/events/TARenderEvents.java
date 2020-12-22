@@ -9,7 +9,7 @@ import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
-import redstoneparadox.tinkersarsenal.modules.arsenal.tools.TATools;
+import redstoneparadox.tinkersarsenal.modules.base.tools.BaseTools;
 
 /**
  * Created by RedstoneParadox on 8/2/2018.
@@ -43,7 +43,7 @@ public class TARenderEvents {
     }
 
     private static boolean isCarryingLoadedBoomstick(EntityPlayer player, EnumHand hand) {
-        if (player.getHeldItem(hand).getItem() == TATools.boomstick) {
+        if (player.getHeldItem(hand).getItem() == BaseTools.boomstick) {
             if (player.getHeldItem(hand).getTagCompound().getBoolean("Loaded")) {
                 return true;
             }

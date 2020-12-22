@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.base;
+package redstoneparadox.tinkersarsenal.modules.module;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;

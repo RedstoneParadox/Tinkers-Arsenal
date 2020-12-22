@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.arsenal.tools.utility;
+package redstoneparadox.tinkersarsenal.modules.base.tools.utility;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentHelper;

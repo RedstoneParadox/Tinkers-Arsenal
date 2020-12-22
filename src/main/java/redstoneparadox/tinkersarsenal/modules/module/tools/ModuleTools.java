@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.base.tools;
+package redstoneparadox.tinkersarsenal.modules.module.tools;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * Created by RedstoneParadox on 9/12/2018.
  */
-public class ToolsBase {
+public class ModuleTools {
     public static final List<ToolCore> tools = new ArrayList<>();
     public static final List<IToolPart> toolParts = new ArrayList<>();
 

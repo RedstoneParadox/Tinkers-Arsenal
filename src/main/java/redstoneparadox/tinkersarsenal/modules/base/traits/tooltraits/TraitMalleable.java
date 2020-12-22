@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.arsenal.traits.tooltraits;
+package redstoneparadox.tinkersarsenal.modules.base.traits.tooltraits;
 
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.entity.Entity;

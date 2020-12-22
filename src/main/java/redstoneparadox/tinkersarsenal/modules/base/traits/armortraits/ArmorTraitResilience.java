@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.arsenal.traits.armortraits;
+package redstoneparadox.tinkersarsenal.modules.base.traits.armortraits;
 
 import c4.conarm.lib.traits.AbstractArmorTrait;
 import net.minecraft.entity.player.EntityPlayer;

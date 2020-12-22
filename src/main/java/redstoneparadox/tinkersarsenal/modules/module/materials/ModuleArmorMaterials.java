@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.base.materials;
+package redstoneparadox.tinkersarsenal.modules.module.materials;
 
 import c4.conarm.lib.materials.ArmorMaterialType;
 import c4.conarm.lib.materials.CoreMaterialStats;
@@ -11,7 +11,7 @@ import slimeknights.tconstruct.library.traits.AbstractTrait;
 /**
  * Created by RedstoneParadox on 9/11/2018.
  */
-public class ArmorMaterialsBase extends MaterialsBase {
+public class ModuleArmorMaterials extends ModuleMaterials {
     //Armor part types:
     protected static String partCore = ArmorMaterialType.CORE;
     protected static String partPlate = ArmorMaterialType.PLATES;

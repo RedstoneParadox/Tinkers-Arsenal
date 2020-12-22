@@ -1,7 +1,7 @@
 package redstoneparadox.tinkersarsenal.modules.oredictionary;
 
 import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
-import redstoneparadox.tinkersarsenal.modules.base.Module;
+import redstoneparadox.tinkersarsenal.modules.module.Module;
 import redstoneparadox.tinkersarsenal.modules.oredictionary.materials.OreDictionaryArmorMaterials;
 import redstoneparadox.tinkersarsenal.modules.oredictionary.materials.OreDictionaryMaterials;
 

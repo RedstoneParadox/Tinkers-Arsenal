@@ -1,11 +1,11 @@
-package redstoneparadox.tinkersarsenal.modules.arsenal.tools;
+package redstoneparadox.tinkersarsenal.modules.base.tools;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
-import redstoneparadox.tinkersarsenal.modules.arsenal.tools.ranged.AmmoBoomstickShot;
-import redstoneparadox.tinkersarsenal.modules.arsenal.tools.ranged.ToolBoomstick;
-import redstoneparadox.tinkersarsenal.modules.arsenal.tools.utility.ToolShears;
-import redstoneparadox.tinkersarsenal.modules.base.tools.ToolsBase;
+import redstoneparadox.tinkersarsenal.modules.base.tools.ranged.AmmoBoomstickShot;
+import redstoneparadox.tinkersarsenal.modules.base.tools.ranged.ToolBoomstick;
+import redstoneparadox.tinkersarsenal.modules.base.tools.utility.ToolShears;
+import redstoneparadox.tinkersarsenal.modules.module.tools.ModuleTools;
 import slimeknights.tconstruct.library.TinkerRegistryClient;
 import slimeknights.tconstruct.library.client.ToolBuildGuiInfo;
 import slimeknights.tconstruct.library.tools.ToolCore;
@@ -15,7 +15,7 @@ import slimeknights.tconstruct.library.tools.ToolPart;
  * Created by RedstoneParadox on 7/31/2018.
  */
 
-public class TATools extends ToolsBase{
+public class BaseTools extends ModuleTools {
     public static ToolCore boomstick;
     public static ToolCore boomstickShot;
     public static ToolCore shears;

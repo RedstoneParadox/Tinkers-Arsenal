@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.base.materials;
+package redstoneparadox.tinkersarsenal.modules.module.materials;
 
 
 import net.minecraftforge.fluids.Fluid;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 /**
  * Created by RedstoneParadox on 9/11/2018.
  */
-public class MaterialsBase {
+public class ModuleMaterials {
     //Harvest Levels:
     protected static int HV0ROCK = HarvestLevels.STONE;
     protected static int HV1FE = HarvestLevels.IRON;

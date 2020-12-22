@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.arsenal.traits.tooltraits;
+package redstoneparadox.tinkersarsenal.modules.base.traits.tooltraits;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;

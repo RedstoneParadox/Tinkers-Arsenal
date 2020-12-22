@@ -1,8 +1,7 @@
 package redstoneparadox.tinkersarsenal.modules.thermalfoundation;
 
-import redstoneparadox.tinkersarsenal.TinkersArsenal;
 import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
-import redstoneparadox.tinkersarsenal.modules.base.Module;
+import redstoneparadox.tinkersarsenal.modules.module.Module;
 import redstoneparadox.tinkersarsenal.modules.thermalfoundation.materials.TFMaterials;
 
 /**

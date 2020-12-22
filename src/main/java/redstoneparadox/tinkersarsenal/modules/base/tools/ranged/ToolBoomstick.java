@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.arsenal.tools.ranged;
+package redstoneparadox.tinkersarsenal.modules.base.tools.ranged;
 
 import com.google.common.collect.ImmutableList;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import redstoneparadox.tinkersarsenal.misc.TASounds;
-import redstoneparadox.tinkersarsenal.modules.arsenal.tools.TATools;
+import redstoneparadox.tinkersarsenal.modules.base.tools.BaseTools;
 import slimeknights.tconstruct.common.Sounds;
 import slimeknights.tconstruct.library.client.BooleanItemPropertyGetter;
 import slimeknights.tconstruct.library.client.crosshair.Crosshairs;
@@ -40,9 +40,9 @@ public class ToolBoomstick extends BowCore implements ICustomCrosshairUser{
     protected static final ResourceLocation PROPERTY_IS_LOADED = new ResourceLocation("loaded");
 
     public ToolBoomstick() {
-        super(PartMaterialType.handle(TATools.boomstickHandle),
-                PartMaterialType.bow(TATools.boomstickBarrel),
-                PartMaterialType.head(TATools.bayonet));
+        super(PartMaterialType.handle(BaseTools.boomstickHandle),
+                PartMaterialType.bow(BaseTools.boomstickBarrel),
+                PartMaterialType.head(BaseTools.bayonet));
 
         this.setRegistryName("boomstick").setTranslationKey("boomstick");
 
@@ -189,8 +189,8 @@ public class ToolBoomstick extends BowCore implements ICustomCrosshairUser{
     protected List<Item> getAmmoItems() {
         if(boltMatches == null) {
             ImmutableList.Builder<Item> builder = ImmutableList.builder();
-            if(TATools.boomstickShot != null) {
-                builder.add(TATools.boomstickShot);
+            if(BaseTools.boomstickShot != null) {
+                builder.add(BaseTools.boomstickShot);
             }
             boltMatches = builder.build();
         }

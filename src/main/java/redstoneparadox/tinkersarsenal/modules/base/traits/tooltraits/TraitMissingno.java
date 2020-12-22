@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.arsenal.traits.tooltraits;
+package redstoneparadox.tinkersarsenal.modules.base.traits.tooltraits;
 
 import net.minecraftforge.common.MinecraftForge;
 import slimeknights.tconstruct.library.traits.AbstractTrait;

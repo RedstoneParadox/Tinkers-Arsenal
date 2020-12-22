@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.arsenal.tools.ranged;
+package redstoneparadox.tinkersarsenal.modules.base.tools.ranged;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
