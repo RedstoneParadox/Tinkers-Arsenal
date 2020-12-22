@@ -12,7 +12,6 @@ import java.util.Random;
  * Created by RedstoneParadox on 8/16/2018.
  */
 public class ArmorTraitRigidity extends AbstractArmorTrait {
-
     public ArmorTraitRigidity() {
         super("rigidity", 0x33ebcb);
     }

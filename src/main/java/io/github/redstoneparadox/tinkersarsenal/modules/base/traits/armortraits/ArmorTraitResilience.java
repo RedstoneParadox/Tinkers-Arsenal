@@ -14,7 +14,6 @@ import java.util.Random;
  * Created by RedstoneParadox on 8/16/2018.
  */
 public class ArmorTraitResilience extends AbstractArmorTrait {
-
     ArmorTraitResilience() {
         super("resilience", 0x33ebcb);
         MinecraftForge.EVENT_BUS.register(this);
