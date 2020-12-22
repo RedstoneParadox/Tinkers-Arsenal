@@ -160,7 +160,6 @@ public class TraitMalleable extends AbstractTrait {
 
     @Override
     public void applyEffect(NBTTagCompound rootCompound, NBTTagCompound modifierTag) {
-
         ModifierNBT.IntegerNBT hasteAmount = ModifierNBT.readInteger(rootCompound.getCompoundTag("haste"));
         ModifierNBT.IntegerNBT luckAmount = ModifierNBT.readInteger(rootCompound.getCompoundTag("luck"));
         ModifierNBT.IntegerNBT sharpAmount = ModifierNBT.readInteger(rootCompound.getCompoundTag("sharpness"));
