@@ -46,7 +46,7 @@ public class TATools extends ToolsBase{
 
         registerTool(boomstick, true, registry);
         registerTool(boomstickShot, true, registry);
-        registerTool(shears, false, registry);
+        // registerTool(shears, false, registry);
 
         registerToolBuilding();
     }
@@ -64,9 +64,11 @@ public class TATools extends ToolsBase{
         boomstickShotInfo.addSlotPosition(32, 41 + 12);
         TinkerRegistryClient.addToolBuilding(boomstickShotInfo);
 
+        /*
         ToolBuildGuiInfo shearInfo = new ToolBuildGuiInfo(shears);
         shearInfo.addSlotPosition(32 - 12, 41 - 12); // top left
         shearInfo.addSlotPosition(32 - 12, 41 + 12); // bot right
         TinkerRegistryClient.addToolBuilding(shearInfo);
+         */
     }
 }

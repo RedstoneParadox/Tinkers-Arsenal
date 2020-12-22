@@ -55,7 +55,7 @@ public class ToolsBase {
 
     protected static void registerTool(ToolCore toolCore, boolean forge, IForgeRegistry<Item> registry) {
         registry.register(toolCore);
-        if (forge == true) {
+        if (forge) {
             TinkerRegistry.registerToolForgeCrafting(toolCore);
         }
         else {
