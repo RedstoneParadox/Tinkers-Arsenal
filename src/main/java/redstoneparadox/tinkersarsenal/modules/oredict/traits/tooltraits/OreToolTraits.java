@@ -7,10 +7,9 @@ import slimeknights.tconstruct.library.traits.AbstractTrait;
  * Created by RedstoneParadox on 8/29/2018.
  */
 public class OreToolTraits {
-    public static final AbstractTrait missingNo = new OreTraitMissingno();
+    public static final AbstractTrait TRAIT_MISSINGNO = new TraitMissingno();
 
     public OreToolTraits() {
-        //Funny poke'mon reference;
-        TinkerRegistry.addTrait(missingNo);
+        TinkerRegistry.addTrait(TRAIT_MISSINGNO);
     }
 }
