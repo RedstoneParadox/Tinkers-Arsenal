@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -18,9 +19,8 @@ public class ArmorTraitRigidity extends AbstractArmorTrait {
 
     @Override
     public float onHurt(ItemStack armor, EntityPlayer player, DamageSource source, float damage, float newDamage, LivingHurtEvent evt) {
-        int armorAmount = armor.getTagCompound().getCompoundTag("Stats").getInteger("defense");
-
-        //Someday, I want to make this work in a similar manner to how I wanted Diamond Edge to work.
+        int armorAmount = Objects.requireNonNull(armor.getTagCompound()).getCompoundTag("Stats").getInteger("defense");
+        
         if (armorAmount > 10) {
             Random rigidChance = new Random();
 
