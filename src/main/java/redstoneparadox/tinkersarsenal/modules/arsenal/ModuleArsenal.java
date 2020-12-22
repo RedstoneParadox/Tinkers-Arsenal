@@ -23,10 +23,7 @@ public class ModuleArsenal extends Module {
 
     @Override
     public void initModule(boolean withArmor) {
-        TinkersArsenal.logger.info("Arsenal as in this mod, not the band from that one musical.");
-
         new TATraits();
-
         TAMaterials taMaterials = new TAMaterials();
         taMaterials.initMaterials(database);
 

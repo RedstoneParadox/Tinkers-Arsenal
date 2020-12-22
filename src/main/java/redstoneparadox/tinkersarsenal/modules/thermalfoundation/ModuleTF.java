@@ -15,8 +15,6 @@ public class ModuleTF extends Module {
 
     @Override
     public void initModule(boolean withArmor) {
-        TinkersArsenal.logger.info("Is it getting hot in here, or is it just me?");
-
         TFMaterials teMats = new TFMaterials();
         teMats.initMaterials(database);
 

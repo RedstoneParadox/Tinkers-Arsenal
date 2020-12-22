@@ -17,8 +17,6 @@ public class ModuleOre extends Module {
 
     @Override
     public void initModule(boolean withArmor) {
-        TinkersArsenal.logger.info("Reading the dictionary is a good way to expand your vocabulary.");
-
         new OreToolTraits();
 
         OreMaterials oreMaterials = new OreMaterials();
