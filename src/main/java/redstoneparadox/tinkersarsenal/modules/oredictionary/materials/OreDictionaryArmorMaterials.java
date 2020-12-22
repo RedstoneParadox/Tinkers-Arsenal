@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.oredict.materials;
+package redstoneparadox.tinkersarsenal.modules.oredictionary.materials;
 
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
 import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
@@ -8,7 +8,7 @@ import redstoneparadox.tinkersarsenal.modules.base.materials.ArmorMaterialsBase;
 /**
  * Created by RedstoneParadox on 8/29/2018.
  */
-public class OreArmorMaterials extends ArmorMaterialsBase {
+public class OreDictionaryArmorMaterials extends ArmorMaterialsBase {
     @Override
     public void initMaterials(ModuleDatabase database){
         if (isTAMaterial("tin")) {

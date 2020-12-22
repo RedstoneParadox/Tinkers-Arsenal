@@ -1,4 +1,4 @@
-package redstoneparadox.tinkersarsenal.modules.oredict.materials;
+package redstoneparadox.tinkersarsenal.modules.oredictionary.materials;
 
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
 import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
@@ -9,7 +9,7 @@ import slimeknights.tconstruct.shared.TinkerFluids;
 /**
  * Created by RedstoneParadox on 8/29/2018.
  */
-public class OreMaterials extends MaterialsBase {
+public class OreDictionaryMaterials extends MaterialsBase {
     @Override
     public void initMaterials(ModuleDatabase database) {
         if (isRegistrable("tin")) {
