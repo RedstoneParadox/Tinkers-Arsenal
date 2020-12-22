@@ -26,7 +26,7 @@ public class OreDictionaryArmorMaterials extends ModuleArmorMaterials {
 
         if (isTAMaterial("constantan")) {
             TAMaterial constantan = database.getMaterial("constantan");
-            addTraits(constantan, BaseTraits.MISSINGNO);
+            addTraits(constantan, BaseArmorTraits.FIRE_RESISTANCE);
             addArmorStats(constantan, 1f, 12f, 1.0f, 1f, 0f, 1f);
         }
 

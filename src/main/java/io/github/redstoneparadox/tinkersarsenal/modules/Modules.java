@@ -1,5 +1,6 @@
 package io.github.redstoneparadox.tinkersarsenal.modules;
 
+import io.github.redstoneparadox.tinkersarsenal.modules.oredictionary.ModuleOreDictionary;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 import io.github.redstoneparadox.tinkersarsenal.modules.base.ModuleBase;
@@ -14,7 +15,7 @@ public class Modules {
 
     public static void createModules() {
         modules.add(new ModuleBase(database));
-        // modules.add(new ModuleOre(database));
+        modules.add(new ModuleOreDictionary(database));
         // if (Loader.isModLoaded("thermalfoundation")) modules.add(new ModuleTF(database));
     }
 

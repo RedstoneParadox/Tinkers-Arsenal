@@ -45,10 +45,12 @@ material.invar.name=Invar
 
 modifier.diamond_edge.name=Diamond Edge
 modifier.diamond_edge.desc=§oSo sharp!§r\nCan better cut through armor if you hit it at just the right angle.
+modifier.fire_resistance.name=Fire Resistance
+modifier.fire_resistance.des=§oDon't Burn Me!§r\nFor those days when you find yourself on fire.
 modifier.resilience.name=Resilience
 modifier.resilience.desc=§oTougher than Tough!§r\nThe resilience is strong with this one.
 modifier.malleable.name=Malleable
-modifier.malleable.desc=§oMalleability= More effective modifiers!§r\nI mean, why else would you make tools out of gold?
+modifier.malleable.desc=§oMalleability = More effective modifiers!§r\nI mean, why else would you make tools out of this?
 modifier.missingno.name=Misingno!
 modifier.misingno.desc=§oNot a gltich...§r\n...just a placeholder.
 

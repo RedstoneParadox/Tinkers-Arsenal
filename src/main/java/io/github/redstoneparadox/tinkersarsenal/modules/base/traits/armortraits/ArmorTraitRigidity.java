@@ -20,7 +20,7 @@ public class ArmorTraitRigidity extends AbstractArmorTrait {
     @Override
     public float onHurt(ItemStack armor, EntityPlayer player, DamageSource source, float damage, float newDamage, LivingHurtEvent evt) {
         int armorAmount = Objects.requireNonNull(armor.getTagCompound()).getCompoundTag("Stats").getInteger("defense");
-        
+
         if (armorAmount > 10) {
             Random rigidChance = new Random();
 

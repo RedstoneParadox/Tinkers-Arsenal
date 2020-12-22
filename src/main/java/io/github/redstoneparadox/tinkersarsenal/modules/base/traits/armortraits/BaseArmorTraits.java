@@ -10,10 +10,12 @@ public class BaseArmorTraits {
     public static final AbstractArmorTrait RESILIENCE = new ArmorTraitResilience();
     public static final AbstractArmorTrait RIGIDITY = new ArmorTraitRigidity();
     public static final AbstractArmorTrait ANTI_CORROSIVE = new ArmorTraitAntiCorrosive();
+    public static final AbstractArmorTrait FIRE_RESISTANCE = new ArmorTraitFireResistance();
 
     public BaseArmorTraits() {
         TinkerRegistry.addTrait(RESILIENCE);
         TinkerRegistry.addTrait(RIGIDITY);
         TinkerRegistry.addTrait(ANTI_CORROSIVE);
+        TinkerRegistry.addTrait(FIRE_RESISTANCE);
     }
 }
