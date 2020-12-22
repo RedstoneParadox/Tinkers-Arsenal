@@ -18,19 +18,19 @@ import java.util.ArrayList;
  */
 public class ModuleMaterials {
     //Harvest Levels:
-    protected static int HV0ROCK = HarvestLevels.STONE;
-    protected static int HV1FE = HarvestLevels.IRON;
-    protected static int HV2DIA = HarvestLevels.DIAMOND;
-    protected static int HV3OBI = HarvestLevels.OBSIDIAN;
-    protected static int HV4CO = HarvestLevels.COBALT;
+    protected static final int HV0ROCK = HarvestLevels.STONE;
+    protected static final int HV1FE = HarvestLevels.IRON;
+    protected static final int HV2DIA = HarvestLevels.DIAMOND;
+    protected static final int HV3OBI = HarvestLevels.OBSIDIAN;
+    protected static final int HV4CO = HarvestLevels.COBALT;
     //Part Types:
-    protected static String partHead = MaterialTypes.HEAD;
-    protected static String partHandle = MaterialTypes.HANDLE;
-    protected static String partEx = MaterialTypes.EXTRA;
-    protected static String partBow = MaterialTypes.BOW;
-    protected static String partString = MaterialTypes.BOWSTRING;
-    protected static String partShaft = MaterialTypes.SHAFT;
-    protected static String partFletching = MaterialTypes.FLETCHING;
+    protected static final String PART_HEAD = MaterialTypes.HEAD;
+    protected static final String PART_HANDLE = MaterialTypes.HANDLE;
+    protected static final String PART_EXTRA = MaterialTypes.EXTRA;
+    protected static final String PART_BOW = MaterialTypes.BOW;
+    protected static final String PART_BOWSTRING = MaterialTypes.BOWSTRING;
+    protected static final String PART_SHAFT = MaterialTypes.SHAFT;
+    protected static final String PART_FLETCHING = MaterialTypes.FLETCHING;
     // Black?
     private static int clr = 0x000000;
 
@@ -87,8 +87,8 @@ public class ModuleMaterials {
 
     @Deprecated
     public void addTraits(Material material, AbstractTrait trait) {
-        material.addTrait(trait, partHandle);
-        material.addTrait(trait, partEx);
+        material.addTrait(trait, PART_HANDLE);
+        material.addTrait(trait, PART_EXTRA);
     }
 
     @Deprecated
