@@ -7,6 +7,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -33,15 +34,12 @@ public class ArmorTraitAntiCorrosive extends AbstractArmorTrait {
     }
 
     public void reduceCorrosion(Potion potion, EntityPlayer player) {
-        int currentDuration = player.getActivePotionEffect(potion).getDuration();
+        int currentDuration = Objects.requireNonNull(player.getActivePotionEffect(potion)).getDuration();
         int newDuration = currentDuration - 100;
-        int potionLevel = player.getActivePotionEffect(potion).getAmplifier();
+        int potionLevel = Objects.requireNonNull(player.getActivePotionEffect(potion)).getAmplifier();
 
-        if (newDuration <= 0){
-            player.removePotionEffect(potion);
-        }
-        else {
-            player.removePotionEffect(potion);
+        player.removePotionEffect(potion);
+        if (newDuration > 0) {
             player.addPotionEffect(new PotionEffect(potion, newDuration, potionLevel));
         }
     }
