@@ -12,7 +12,6 @@ public class TFMaterials extends ModuleMaterials {
     @Override
     public void initMaterials(MaterialDatabase database) {
         //Compatible ore-dict materials:
-
         if (isRegistrable("tin")) {
             TAMaterial tin = database.getMaterial("tin");
             tin.setRepresentativeItem("ingotTin");
