@@ -20,7 +20,6 @@ public class BaseMaterials extends ModuleMaterials {
             TAMaterial gold = new TAMaterial("gold", 0xeaee57);
             setCraftability(gold, "ingotGold", TinkerFluids.gold);
             gold.addTrait(BaseTraits.MALLEABLE, PART_HEAD);
-            gold.addTrait(BaseTraits.MALLEABLE, PART_HANDLE);
             gold.addTrait(BaseTraits.MALLEABLE, PART_EXTRA);
             addStats(gold, 14, 12.00f, 2.00f, HV0ROCK, 0.1f, -10, -7, 0.5f, 1.5f, 1f);
             gold.setRepresentativeItem(new ItemStack(Items.GOLD_INGOT));
