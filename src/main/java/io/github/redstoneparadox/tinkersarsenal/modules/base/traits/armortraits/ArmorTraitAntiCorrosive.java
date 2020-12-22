@@ -14,7 +14,6 @@ import java.util.Random;
  * Created by RedstoneParadox on 8/17/2018.
  */
 public class ArmorTraitAntiCorrosive extends AbstractArmorTrait {
-
     public ArmorTraitAntiCorrosive() {
         super("anti_corrosive", 0xeaee57);
     }
