@@ -12,7 +12,6 @@ import slimeknights.tconstruct.library.traits.AbstractTrait;
  * Created by RedstoneParadox on 9/11/2018.
  */
 public class ArmorMaterialsBase extends MaterialsBase {
-
     //Armor part types:
     protected static String partCore = ArmorMaterialType.CORE;
     protected static String partPlate = ArmorMaterialType.PLATES;

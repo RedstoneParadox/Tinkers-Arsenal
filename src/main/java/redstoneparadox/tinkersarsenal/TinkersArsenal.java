@@ -23,8 +23,6 @@ import redstoneparadox.tinkersarsenal.proxy.CommonProxy;
         useMetadata = true
 )
 public class TinkersArsenal {
-
-
     public static Logger logger;
 
     @SidedProxy(clientSide = TAProperties.CLIENT_PROXY, serverSide = TAProperties.SERVER_PROXY)
@@ -62,9 +60,4 @@ public class TinkersArsenal {
     public void postinit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
     }
-
-    /**
-     * Forge will automatically look up and bind blocks to the fields in this class
-     * based on their registry name.
-     */
 }

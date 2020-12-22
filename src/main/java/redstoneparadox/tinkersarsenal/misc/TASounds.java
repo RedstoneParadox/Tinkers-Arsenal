@@ -17,7 +17,6 @@ import slimeknights.tconstruct.common.TinkerNetwork;
  */
 @Mod.EventBusSubscriber(modid = TAProperties.MOD_ID)
 public class TASounds {
-
     public static final SoundEvent BOOMSTICK_SHOT = sound("boomstick_shot");
 
     private static SoundEvent sound(String name) {

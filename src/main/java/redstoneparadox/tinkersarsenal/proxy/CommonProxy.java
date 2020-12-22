@@ -25,7 +25,6 @@ import slimeknights.tconstruct.library.tools.ToolCore;
  */
 @Mod.EventBusSubscriber
 public class CommonProxy {
-
     public void preInit(FMLPreInitializationEvent e) {
         MinecraftForge.EVENT_BUS.register(new TARegistryEvents());
 

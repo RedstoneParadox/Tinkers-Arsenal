@@ -12,7 +12,6 @@ import slimeknights.tconstruct.library.Util;
  * Created by RedstoneParadox on 8/3/2018.
  */
 public class TAEntities {
-
     public static void init() {
         int id = 1;
         EntityRegistry.registerModEntity(Util.getResource("boomstick_shot"), EntityBoomstickShot.class, "boomstickShot", id++, TinkersArsenal.INSTANCE, 64, 1, false);

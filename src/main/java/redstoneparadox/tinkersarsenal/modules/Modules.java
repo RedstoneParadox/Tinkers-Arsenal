@@ -1,12 +1,9 @@
 package redstoneparadox.tinkersarsenal.modules;
 
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.registries.IForgeRegistry;
 import redstoneparadox.tinkersarsenal.modules.arsenal.ModuleArsenal;
 import redstoneparadox.tinkersarsenal.modules.base.Module;
-import redstoneparadox.tinkersarsenal.modules.oredict.ModuleOre;
-import redstoneparadox.tinkersarsenal.modules.thermalfoundation.ModuleTF;
 
 import java.util.ArrayList;
 import java.util.List;

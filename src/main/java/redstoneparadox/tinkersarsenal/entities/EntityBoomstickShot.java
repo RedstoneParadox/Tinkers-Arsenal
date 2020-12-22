@@ -14,7 +14,6 @@ import slimeknights.tconstruct.library.entity.EntityProjectileBase;
  * Created by RedstoneParadox on 8/3/2018.
  */
 public class EntityBoomstickShot extends EntityProjectileBase {
-
     // animation
     public int roll = 0;
     public int rollSpeed = 80;

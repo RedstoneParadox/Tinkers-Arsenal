@@ -13,7 +13,6 @@ import java.util.Map;
 @Config(modid = TAProperties.MOD_ID, type = Config.Type.INSTANCE, name = "TinkersArsenal")
 public class TAConfig {
     //Misc:
-
     @Config.Ignore
     private static int version = 1;
 

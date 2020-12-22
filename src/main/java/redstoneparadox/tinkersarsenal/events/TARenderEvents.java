@@ -16,7 +16,6 @@ import redstoneparadox.tinkersarsenal.modules.arsenal.tools.TATools;
  */
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class TARenderEvents {
-
     @SubscribeEvent
     public static void onEvent(RenderLivingEvent.Pre<EntityPlayer> event) {
         if (!(event.getEntity() instanceof EntityPlayer)) {

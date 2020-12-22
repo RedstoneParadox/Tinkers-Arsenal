@@ -9,7 +9,6 @@ import slimeknights.tconstruct.library.TinkerRegistry;
  * Created by RedstoneParadox on 8/29/2018.
  */
 public class TFMaterials extends MaterialsBase {
-
     @Override
     public void initMaterials(ModuleDatabase database) {
         //Compatible ore-dict materials:
@@ -62,6 +61,4 @@ public class TFMaterials extends MaterialsBase {
             TinkerRegistry.addMaterial(invar);
         }
     }
-
-
 }

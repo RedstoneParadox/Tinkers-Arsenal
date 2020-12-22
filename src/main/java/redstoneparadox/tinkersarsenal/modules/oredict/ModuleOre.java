@@ -11,7 +11,6 @@ import redstoneparadox.tinkersarsenal.modules.oredict.traits.tooltraits.OreToolT
  * Created by RedstoneParadox on 9/11/2018.
  */
 public class ModuleOre extends Module {
-
     public ModuleOre(ModuleDatabase materialDatabase) {
         super(materialDatabase);
     }

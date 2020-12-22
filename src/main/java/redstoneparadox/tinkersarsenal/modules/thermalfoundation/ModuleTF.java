@@ -9,8 +9,6 @@ import redstoneparadox.tinkersarsenal.modules.thermalfoundation.materials.TFMate
  * Created by RedstoneParadox on 8/29/2018.
  */
 public class ModuleTF extends Module {
-
-
     public ModuleTF(ModuleDatabase materialDatabase) {
         super(materialDatabase);
     }

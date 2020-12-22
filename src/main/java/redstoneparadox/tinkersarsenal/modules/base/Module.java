@@ -8,7 +8,6 @@ import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
  * Created by RedstoneParadox on 9/10/2018.
  */
 public class Module {
-
     protected ModuleDatabase database;
 
     public Module(ModuleDatabase materialDatabase) {

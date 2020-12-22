@@ -17,17 +17,13 @@ import java.util.ArrayList;
  * Created by RedstoneParadox on 9/11/2018.
  */
 public class MaterialsBase {
-
     //Harvest Levels:
-
     protected static int HV0ROCK = HarvestLevels.STONE;
     protected static int HV1FE = HarvestLevels.IRON;
     protected static int HV2DIA = HarvestLevels.DIAMOND;
     protected static int HV3OBI = HarvestLevels.OBSIDIAN;
     protected static int HV4CO = HarvestLevels.COBALT;
-
-    //Part Types
-
+    //Part Types:
     protected static String partHead = MaterialTypes.HEAD;
     protected static String partHandle = MaterialTypes.HANDLE;
     protected static String partEx = MaterialTypes.EXTRA;
@@ -35,7 +31,7 @@ public class MaterialsBase {
     protected static String partString = MaterialTypes.BOWSTRING;
     protected static String partShaft = MaterialTypes.SHAFT;
     protected static String partFletching = MaterialTypes.FLETCHING;
-
+    // Black?
     private static int clr = 0x000000;
 
     public void initMaterials(ModuleDatabase database) {

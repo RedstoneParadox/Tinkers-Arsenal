@@ -10,10 +10,8 @@ import slimeknights.tconstruct.shared.TinkerFluids;
  * Created by RedstoneParadox on 8/29/2018.
  */
 public class OreMaterials extends MaterialsBase {
-
     @Override
     public void initMaterials(ModuleDatabase database) {
-
         if (isRegistrable("tin")) {
             TAMaterial tin = new TAMaterial("tin", 0xC3E6E6);
             setCraftability(tin, "ingotTin");

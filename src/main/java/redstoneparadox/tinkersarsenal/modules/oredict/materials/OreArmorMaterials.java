@@ -9,10 +9,8 @@ import redstoneparadox.tinkersarsenal.modules.oredict.traits.tooltraits.OreToolT
  * Created by RedstoneParadox on 8/29/2018.
  */
 public class OreArmorMaterials extends ArmorMaterialsBase {
-
     @Override
     public void initMaterials(ModuleDatabase database){
-
         if (isTAMaterial("tin")) {
             TAMaterial tin = database.getMaterial("tin");
             addTraits(tin, OreToolTraits.missingNo);

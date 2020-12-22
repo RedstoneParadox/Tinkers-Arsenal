@@ -16,7 +16,6 @@ import slimeknights.tconstruct.library.materials.Material;
  */
 @Mod.EventBusSubscriber(modid = TAProperties.MOD_ID)
 public class TARegistryEvents {
-
     @SubscribeEvent
     public void onConfigChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event)
     {

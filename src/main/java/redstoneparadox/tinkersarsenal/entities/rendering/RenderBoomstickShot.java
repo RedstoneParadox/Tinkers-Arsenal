@@ -8,7 +8,6 @@ import slimeknights.tconstruct.library.client.renderer.RenderProjectileBase;
  * Created by RedstoneParadox on 8/3/2018.
  */
 public class RenderBoomstickShot extends RenderProjectileBase<EntityBoomstickShot> {
-
     public RenderBoomstickShot(RenderManager renderManager) {
         super(renderManager);
     }

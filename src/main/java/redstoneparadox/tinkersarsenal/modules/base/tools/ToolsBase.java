@@ -5,8 +5,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.registries.IForgeRegistry;
-import redstoneparadox.tinkersarsenal.geometry.Vector2;
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
+import redstoneparadox.tinkersarsenal.geometry.Vector2;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.TinkerRegistryClient;
 import slimeknights.tconstruct.library.client.ToolBuildGuiInfo;
@@ -25,10 +25,8 @@ import java.util.List;
  * Created by RedstoneParadox on 9/12/2018.
  */
 public class ToolsBase {
-
     public static final List<ToolCore> tools = new ArrayList<>();
     public static final List<IToolPart> toolParts = new ArrayList<>();
-
 
     public void initToolParts(IForgeRegistry<Item> registry) {
 
