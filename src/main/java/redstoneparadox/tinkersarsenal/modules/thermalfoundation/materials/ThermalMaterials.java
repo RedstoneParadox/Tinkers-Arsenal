@@ -8,7 +8,7 @@ import slimeknights.tconstruct.library.TinkerRegistry;
 /**
  * Created by RedstoneParadox on 8/29/2018.
  */
-public class TFMaterials extends ModuleMaterials {
+public class ThermalMaterials extends ModuleMaterials {
     @Override
     public void initMaterials(MaterialDatabase database) {
         //Compatible ore-dict materials:
