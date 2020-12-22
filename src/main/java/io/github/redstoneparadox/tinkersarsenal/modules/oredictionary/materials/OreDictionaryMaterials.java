@@ -23,7 +23,7 @@ public class OreDictionaryMaterials extends ModuleMaterials {
         if (isRegistrable("aluminum")) {
             TAMaterial aluminum = new TAMaterial("aluminum", 0xE6E6F2);
             setCraftability(aluminum, "ingotAluminum", TinkerFluids.aluminum);
-            addTraits(aluminum, BaseTraits.MISSINGNO);
+            aluminum.addTrait(BaseTraits.MALLEABLE, PART_HEAD);
             addStats(aluminum, 150, 10, 4.00f, HV1FE, 0.5f, -75, 50, 0.5f, 1.5f, 1.75f);
             database.addMaterial(aluminum);
         }
