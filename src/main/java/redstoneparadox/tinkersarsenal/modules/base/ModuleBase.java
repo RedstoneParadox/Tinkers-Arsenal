@@ -2,7 +2,7 @@ package redstoneparadox.tinkersarsenal.modules.base;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import redstoneparadox.tinkersarsenal.modules.base.materials.BaseArmorMaterials;
 import redstoneparadox.tinkersarsenal.modules.base.materials.BaseMaterials;
 import redstoneparadox.tinkersarsenal.modules.base.tools.BaseTools;
@@ -16,7 +16,7 @@ import redstoneparadox.tinkersarsenal.modules.module.Module;
 public class ModuleBase extends Module {
     BaseTools tools = new BaseTools();
 
-    public ModuleBase(ModuleDatabase materialDatabase) {
+    public ModuleBase(MaterialDatabase materialDatabase) {
         super(materialDatabase);
     }
 

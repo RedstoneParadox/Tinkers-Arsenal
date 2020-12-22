@@ -5,7 +5,7 @@ import net.minecraftforge.fluids.Fluid;
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
 import redstoneparadox.tinkersarsenal.misc.TAConfig;
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.*;
 import slimeknights.tconstruct.library.traits.AbstractTrait;
@@ -34,7 +34,7 @@ public class ModuleMaterials {
     // Black?
     private static int clr = 0x000000;
 
-    public void initMaterials(ModuleDatabase database) {
+    public void initMaterials(MaterialDatabase database) {
 
     }
 

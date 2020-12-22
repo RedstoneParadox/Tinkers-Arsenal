@@ -1,7 +1,7 @@
 package redstoneparadox.tinkersarsenal.modules.oredictionary.materials;
 
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import redstoneparadox.tinkersarsenal.modules.base.traits.tooltraits.BaseTraits;
 import redstoneparadox.tinkersarsenal.modules.module.materials.ModuleArmorMaterials;
 
@@ -10,7 +10,7 @@ import redstoneparadox.tinkersarsenal.modules.module.materials.ModuleArmorMateri
  */
 public class OreDictionaryArmorMaterials extends ModuleArmorMaterials {
     @Override
-    public void initMaterials(ModuleDatabase database){
+    public void initMaterials(MaterialDatabase database){
         if (isTAMaterial("tin")) {
             TAMaterial tin = database.getMaterial("tin");
             addTraits(tin, BaseTraits.MISSINGNO);

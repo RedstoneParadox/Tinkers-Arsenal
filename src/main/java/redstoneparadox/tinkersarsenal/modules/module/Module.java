@@ -2,15 +2,15 @@ package redstoneparadox.tinkersarsenal.modules.module;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 
 /**
  * Created by RedstoneParadox on 9/10/2018.
  */
 public class Module {
-    protected ModuleDatabase database;
+    protected MaterialDatabase database;
 
-    public Module(ModuleDatabase materialDatabase) {
+    public Module(MaterialDatabase materialDatabase) {
         database = materialDatabase;
     }
 

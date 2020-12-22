@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Modules {
     private static List<Module> modules = new ArrayList<>();
-    private static ModuleDatabase database = new ModuleDatabase();
+    private static MaterialDatabase database = new MaterialDatabase();
 
     public static void createModules() {
         modules.add(new ModuleBase(database));

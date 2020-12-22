@@ -2,7 +2,7 @@ package redstoneparadox.tinkersarsenal.modules.base.materials;
 
 import redstoneparadox.tinkersarsenal.TinkersArsenal;
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import redstoneparadox.tinkersarsenal.modules.base.traits.armortraits.BaseArmorTraits;
 import redstoneparadox.tinkersarsenal.modules.module.materials.ModuleArmorMaterials;
 
@@ -11,7 +11,7 @@ import redstoneparadox.tinkersarsenal.modules.module.materials.ModuleArmorMateri
  */
 public class BaseArmorMaterials extends ModuleArmorMaterials {
     @Override
-    public void initMaterials(ModuleDatabase database){
+    public void initMaterials(MaterialDatabase database){
         TinkersArsenal.logger.info("Time to suit up!");
         //Gold:
         if (isTAMaterial("gold")) {

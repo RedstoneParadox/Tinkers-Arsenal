@@ -1,7 +1,7 @@
 package redstoneparadox.tinkersarsenal.modules.thermalfoundation.materials;
 
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import redstoneparadox.tinkersarsenal.modules.module.materials.ModuleMaterials;
 import slimeknights.tconstruct.library.TinkerRegistry;
 
@@ -10,7 +10,7 @@ import slimeknights.tconstruct.library.TinkerRegistry;
  */
 public class TFMaterials extends ModuleMaterials {
     @Override
-    public void initMaterials(ModuleDatabase database) {
+    public void initMaterials(MaterialDatabase database) {
         //Compatible ore-dict materials:
 
         if (isRegistrable("tin")) {

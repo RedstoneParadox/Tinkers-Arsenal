@@ -1,6 +1,6 @@
 package redstoneparadox.tinkersarsenal.modules.thermalfoundation;
 
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import redstoneparadox.tinkersarsenal.modules.module.Module;
 import redstoneparadox.tinkersarsenal.modules.thermalfoundation.materials.TFMaterials;
 
@@ -8,7 +8,7 @@ import redstoneparadox.tinkersarsenal.modules.thermalfoundation.materials.TFMate
  * Created by RedstoneParadox on 8/29/2018.
  */
 public class ModuleTF extends Module {
-    public ModuleTF(ModuleDatabase materialDatabase) {
+    public ModuleTF(MaterialDatabase materialDatabase) {
         super(materialDatabase);
     }
 

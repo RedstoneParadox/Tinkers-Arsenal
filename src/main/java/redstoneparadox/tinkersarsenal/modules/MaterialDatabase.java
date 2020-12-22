@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Created by RedstoneParadox on 9/11/2018.
  */
-public class ModuleDatabase {
+public class MaterialDatabase {
     private Map<String, TAMaterial> materials = new HashMap<>();
 
     public void addMaterial(TAMaterial material) {

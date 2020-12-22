@@ -3,7 +3,7 @@ package redstoneparadox.tinkersarsenal.modules.base.materials;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import redstoneparadox.tinkersarsenal.modules.base.traits.tooltraits.BaseTraits;
 import redstoneparadox.tinkersarsenal.modules.module.materials.ModuleMaterials;
 import slimeknights.tconstruct.library.TinkerRegistry;
@@ -14,7 +14,7 @@ import slimeknights.tconstruct.shared.TinkerFluids;
  */
 public class BaseMaterials extends ModuleMaterials {
     @Override
-    public void initMaterials(ModuleDatabase database) {
+    public void initMaterials(MaterialDatabase database) {
         //Gold
         if (isRegistrable("gold")) {
             TAMaterial gold = new TAMaterial("gold", 0xeaee57);

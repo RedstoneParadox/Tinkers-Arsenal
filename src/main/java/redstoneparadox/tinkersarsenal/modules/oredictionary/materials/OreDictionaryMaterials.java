@@ -1,7 +1,7 @@
 package redstoneparadox.tinkersarsenal.modules.oredictionary.materials;
 
 import redstoneparadox.tinkersarsenal.misc.TAMaterial;
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import redstoneparadox.tinkersarsenal.modules.base.traits.tooltraits.BaseTraits;
 import redstoneparadox.tinkersarsenal.modules.module.materials.ModuleMaterials;
 import slimeknights.tconstruct.shared.TinkerFluids;
@@ -11,7 +11,7 @@ import slimeknights.tconstruct.shared.TinkerFluids;
  */
 public class OreDictionaryMaterials extends ModuleMaterials {
     @Override
-    public void initMaterials(ModuleDatabase database) {
+    public void initMaterials(MaterialDatabase database) {
         if (isRegistrable("tin")) {
             TAMaterial tin = new TAMaterial("tin", 0xC3E6E6);
             setCraftability(tin, "ingotTin");

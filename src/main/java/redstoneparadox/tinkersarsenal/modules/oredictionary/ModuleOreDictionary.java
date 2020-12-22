@@ -1,6 +1,6 @@
 package redstoneparadox.tinkersarsenal.modules.oredictionary;
 
-import redstoneparadox.tinkersarsenal.modules.ModuleDatabase;
+import redstoneparadox.tinkersarsenal.modules.MaterialDatabase;
 import redstoneparadox.tinkersarsenal.modules.module.Module;
 import redstoneparadox.tinkersarsenal.modules.oredictionary.materials.OreDictionaryArmorMaterials;
 import redstoneparadox.tinkersarsenal.modules.oredictionary.materials.OreDictionaryMaterials;
@@ -9,7 +9,7 @@ import redstoneparadox.tinkersarsenal.modules.oredictionary.materials.OreDiction
  * Created by RedstoneParadox on 9/11/2018.
  */
 public class ModuleOreDictionary extends Module {
-    public ModuleOreDictionary(ModuleDatabase materialDatabase) {
+    public ModuleOreDictionary(MaterialDatabase materialDatabase) {
         super(materialDatabase);
     }
 
