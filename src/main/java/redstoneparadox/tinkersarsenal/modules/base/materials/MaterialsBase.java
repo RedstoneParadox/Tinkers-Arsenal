@@ -68,7 +68,7 @@ public class MaterialsBase {
 
     protected void setCraftability(Material material, String item) {
         String suffix = removePrefix(item);
-        String blockString = new String("block" + suffix);
+        String blockString = "block" + suffix;
 
         if (suffix != null) {
             material.addItem(item, 1, Material.VALUE_Ingot);
@@ -129,24 +129,17 @@ public class MaterialsBase {
     }
 
     public void addBowstringStats() {
-
     }
 
     public void addShaftStats() {
-
     }
 
     public void addFletchingStats() {
-
     }
 
     public void addGuitarStats() {
-        //Nothing to see here folks.
     }
 
-    /*Used for getting a prefix from the provided oreDict string so that the prefix
-    "block" can be attached to it. Will eventually be replaced.*/
-    @Deprecated
     public static String removePrefix(String item) {
         if (item.contains("gem")) {
             return item.substring(item.indexOf("gem") + 3);

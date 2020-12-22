@@ -15,14 +15,11 @@ public class Module {
     }
 
     public void initModule(boolean withArmor) {
-
     }
 
     public void initTools(IForgeRegistry<Item> registry) {
-
     }
 
     public void initGUIs() {
-
     }
 }

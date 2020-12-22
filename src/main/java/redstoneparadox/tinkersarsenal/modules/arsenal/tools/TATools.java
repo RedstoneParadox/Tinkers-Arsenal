@@ -16,7 +16,6 @@ import slimeknights.tconstruct.library.tools.ToolPart;
  */
 
 public class TATools extends ToolsBase{
-
     public static ToolCore boomstick;
     public static ToolCore boomstickShot;
     public static ToolCore shears;

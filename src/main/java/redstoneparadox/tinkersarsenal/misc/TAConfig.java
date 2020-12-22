@@ -114,7 +114,6 @@ public class TAConfig {
         //Base materials:
         map.put("gold", baseCategory.gold);
         map.put("diamond", baseCategory.diamond);
-
         //Common ore-dict materials:
         map.put("tin", oreDictCategory.tin);
         map.put("aluminum", oreDictCategory.aluminum);
@@ -125,18 +124,14 @@ public class TAConfig {
         map.put("manaInfusedMetal", oreDictCategory.mithril);
         map.put("mithril", oreDictCategory.mithril);
         map.put("invar", oreDictCategory.invar);
-
         //Thermal Foundation Materials:
         map.put("luminum", teCategory.luminum);
         map.put("signalium", teCategory.signalium);
         map.put("enderium", teCategory.enderium);
-
         //Thermal Foundation Shaft Materials:
         map.put("blizz_rod", teCategory.blizz);
         map.put("blitz_rod", teCategory.blitz);
         map.put("baltz_rod", teCategory.baltz);
-
-
         return map;
     }
 }

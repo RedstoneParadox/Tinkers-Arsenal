@@ -50,7 +50,6 @@ public class TinkersArsenal {
      */
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-
     }
 
     /**

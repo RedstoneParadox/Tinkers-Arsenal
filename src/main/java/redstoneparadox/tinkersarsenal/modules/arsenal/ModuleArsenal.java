@@ -15,7 +15,6 @@ import redstoneparadox.tinkersarsenal.modules.base.Module;
  * Created by RedstoneParadox on 9/10/2018.
  */
 public class ModuleArsenal extends Module {
-
     TATools tools = new TATools();
 
     public ModuleArsenal(ModuleDatabase materialDatabase) {

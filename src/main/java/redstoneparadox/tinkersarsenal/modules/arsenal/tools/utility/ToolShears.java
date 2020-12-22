@@ -28,7 +28,6 @@ import java.util.Random;
  * Created by RedstoneParadox on 10/8/2018.
  */
 public class ToolShears extends TinkerToolCore {
-
     public ToolShears() {
         super(PartMaterialType.head(TinkerTools.knifeBlade), PartMaterialType.handle(TinkerTools.binding));
         this.setRegistryName("toolshears").setTranslationKey("toolshears");
@@ -43,7 +42,6 @@ public class ToolShears extends TinkerToolCore {
             addDefaultSubItems(subItems, null, null);
         }
     }
-
 
     @Override
     public float damagePotential() {
@@ -112,5 +110,4 @@ public class ToolShears extends TinkerToolCore {
         player.swingArm(hand);
         player.spawnSweepParticles();
     }
-
 }

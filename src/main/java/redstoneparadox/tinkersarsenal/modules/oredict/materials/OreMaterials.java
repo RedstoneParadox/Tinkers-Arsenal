@@ -73,6 +73,5 @@ public class OreMaterials extends MaterialsBase {
             addStats(invar, 175, 6.50f, 5.50f, HV2DIA, 1.5f, 50, 250, 0.5f, 1.5f, 1.75f);
             database.addMaterial(invar);
         }
-
     }
 }

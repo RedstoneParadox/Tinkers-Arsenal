@@ -29,7 +29,6 @@ public class ToolsBase {
     public static final List<IToolPart> toolParts = new ArrayList<>();
 
     public void initToolParts(IForgeRegistry<Item> registry) {
-
     }
 
     protected static ToolPart toolPart(int cost) {
@@ -65,7 +64,6 @@ public class ToolsBase {
 
     @SideOnly(Side.CLIENT)
     public void initToolGUIs() {
-
     }
 
     protected static void registerToolGUI(ToolCore toolCore, ArrayList<Vector2> vector2s) {

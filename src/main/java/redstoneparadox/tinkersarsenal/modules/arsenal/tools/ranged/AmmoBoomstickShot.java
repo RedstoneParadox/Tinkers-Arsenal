@@ -23,7 +23,6 @@ import java.util.List;
  * Created by RedstoneParadox on 8/3/2018.
  */
 public class AmmoBoomstickShot extends ProjectileCore {
-
     private static PartMaterialType bulletPMT = new PartMaterialType(TATools.bullet, MaterialTypes.HEAD, MaterialTypes.PROJECTILE);
 
     public AmmoBoomstickShot() {

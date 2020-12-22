@@ -36,9 +36,7 @@ import java.util.List;
  * Created by RedstoneParadox on 7/31/2018.
  */
 public class ToolBoomstick extends BowCore implements ICustomCrosshairUser{
-
     private static final String TAG_Loaded = "Loaded";
-
     protected static final ResourceLocation PROPERTY_IS_LOADED = new ResourceLocation("loaded");
 
     public ToolBoomstick() {

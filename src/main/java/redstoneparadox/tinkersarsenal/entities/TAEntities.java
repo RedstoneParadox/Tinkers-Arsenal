@@ -14,7 +14,7 @@ import slimeknights.tconstruct.library.Util;
 public class TAEntities {
     public static void init() {
         int id = 1;
-        EntityRegistry.registerModEntity(Util.getResource("boomstick_shot"), EntityBoomstickShot.class, "boomstickShot", id++, TinkersArsenal.INSTANCE, 64, 1, false);
+        EntityRegistry.registerModEntity(Util.getResource("boomstick_shot"), EntityBoomstickShot.class, "boomstickShot", id += 1, TinkersArsenal.INSTANCE, 64, 1, false);
     }
 
     @SideOnly(Side.CLIENT)

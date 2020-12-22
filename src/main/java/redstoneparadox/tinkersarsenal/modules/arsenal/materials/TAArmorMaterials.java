@@ -10,10 +10,8 @@ import redstoneparadox.tinkersarsenal.modules.base.materials.ArmorMaterialsBase;
  * Created by RedstoneParadox on 8/22/2018.
  */
 public class TAArmorMaterials extends ArmorMaterialsBase {
-
     @Override
     public void initMaterials(ModuleDatabase database){
-
         TinkersArsenal.logger.info("Time to suit up!");
         //Gold:
         if (isTAMaterial("gold")) {

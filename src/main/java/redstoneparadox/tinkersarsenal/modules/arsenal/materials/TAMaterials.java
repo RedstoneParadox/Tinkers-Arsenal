@@ -13,10 +13,8 @@ import slimeknights.tconstruct.shared.TinkerFluids;
  * Created by RedstoneParadox on 8/9/2018.
  */
 public class TAMaterials extends MaterialsBase{
-
     @Override
     public void initMaterials(ModuleDatabase database) {
-
         //Gold
         if (isRegistrable("gold")) {
             TAMaterial gold = new TAMaterial("gold", 0xeaee57);

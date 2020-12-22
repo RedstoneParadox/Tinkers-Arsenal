@@ -42,7 +42,6 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-
     }
 
     @SubscribeEvent
@@ -53,7 +52,6 @@ public class CommonProxy {
 
     @SubscribeEvent
     public void registerEntities(RegistryEvent.Register<EntityEntry> event) {
-
     }
 
     public void registerModels() {
@@ -65,10 +63,8 @@ public class CommonProxy {
 
 
     public <T extends Item & IToolPart> void registerToolPartModel(T part) {
-
     }
 
     public void registerToolModel(ToolCore toolCore) {
-
     }
 }

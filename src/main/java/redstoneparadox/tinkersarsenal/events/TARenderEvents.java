@@ -21,12 +21,12 @@ public class TARenderEvents {
         if (!(event.getEntity() instanceof EntityPlayer)) {
             return;
         }
-        EntityPlayer player = (EntityPlayer) event.getEntity();
 
+        EntityPlayer player = (EntityPlayer) event.getEntity();
         EnumHand right = EnumHand.MAIN_HAND;
         EnumHand left = EnumHand.OFF_HAND;
 
-        if(player instanceof EntityPlayerSP && player.getPrimaryHand() == EnumHandSide.LEFT) {
+        if (player instanceof EntityPlayerSP && player.getPrimaryHand() == EnumHandSide.LEFT) {
             right = EnumHand.OFF_HAND;
             left = EnumHand.MAIN_HAND;
         }
@@ -35,6 +35,7 @@ public class TARenderEvents {
             if(isCarryingLoadedBoomstick(player, right)) {
                 ((ModelBiped) event.getRenderer().getMainModel()).rightArmPose = ModelBiped.ArmPose.BOW_AND_ARROW;
             }
+
             else if(isCarryingLoadedBoomstick(player, left)) {
                 ((ModelBiped) event.getRenderer().getMainModel()).leftArmPose = ModelBiped.ArmPose.BOW_AND_ARROW;
             }

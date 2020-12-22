@@ -24,13 +24,14 @@ public class TAProperties {
             .add("tinkerscompendium")
             .build();
 
-    private static final String dependencies() {
-        String dependencyString =
-                "required-after:tconstruct@[1.12.2-2.10.1.87,);";
+    private static String dependencies() {
+        StringBuilder dependencyString =
+                new StringBuilder("required-after:tconstruct@[1.12.2-2.10.1.87,);");
+        assert DEPENDENCY_IDS != null;
         for (int i = 0; i < DEPENDENCY_IDS.size(); i ++) {
-            dependencyString = dependencyString +  "after:" + DEPENDENCY_IDS.get(i) + ";";
+            dependencyString.append("after:").append(DEPENDENCY_IDS.get(i)).append(";");
         }
 
-        return dependencyString;
+        return dependencyString.toString();
     }
 }

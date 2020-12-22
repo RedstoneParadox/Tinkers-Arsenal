@@ -14,7 +14,5 @@ public class RenderBoomstickShot extends RenderProjectileBase<EntityBoomstickSho
 
     @Override
     protected void customCustomRendering(EntityBoomstickShot entity, double x, double y, double z, float entityYaw, float partialTicks) {
-
     }
-
 }
