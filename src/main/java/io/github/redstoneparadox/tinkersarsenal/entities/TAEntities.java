@@ -1,11 +1,11 @@
 package io.github.redstoneparadox.tinkersarsenal.entities;
 
+import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
+import io.github.redstoneparadox.tinkersarsenal.entities.rendering.RenderBoomstickShot;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
-import io.github.redstoneparadox.tinkersarsenal.entities.rendering.RenderBoomstickShot;
 import slimeknights.tconstruct.library.Util;
 
 /**

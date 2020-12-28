@@ -1,5 +1,8 @@
 package io.github.redstoneparadox.tinkersarsenal.proxy;
 
+import io.github.redstoneparadox.tinkersarsenal.entities.TAEntities;
+import io.github.redstoneparadox.tinkersarsenal.events.TARenderEvents;
+import io.github.redstoneparadox.tinkersarsenal.tools.ArsenalTools;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -8,9 +11,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
-import io.github.redstoneparadox.tinkersarsenal.entities.TAEntities;
-import io.github.redstoneparadox.tinkersarsenal.events.TARenderEvents;
-import io.github.redstoneparadox.tinkersarsenal.modules.Modules;
 import slimeknights.tconstruct.common.ModelRegisterUtil;
 import slimeknights.tconstruct.library.tools.IToolPart;
 import slimeknights.tconstruct.library.tools.ToolCore;
@@ -43,6 +43,6 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void postInit(FMLPostInitializationEvent e) {
-        Modules.initToolGUIs();
+        ArsenalTools.initToolGUIs();
     }
 }

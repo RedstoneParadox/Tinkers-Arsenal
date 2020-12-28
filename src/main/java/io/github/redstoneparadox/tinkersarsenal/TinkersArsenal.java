@@ -1,5 +1,6 @@
 package io.github.redstoneparadox.tinkersarsenal;
 
+import io.github.redstoneparadox.tinkersarsenal.proxy.CommonProxy;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.common.Mod;
@@ -8,7 +9,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
-import io.github.redstoneparadox.tinkersarsenal.proxy.CommonProxy;
 
 @Mod(
         modid = TAProperties.MOD_ID,

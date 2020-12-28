@@ -1,5 +1,6 @@
 package io.github.redstoneparadox.tinkersarsenal.events;
 
+import io.github.redstoneparadox.tinkersarsenal.tools.ArsenalTools;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.entity.player.EntityPlayer;
@@ -9,7 +10,6 @@ import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
-import io.github.redstoneparadox.tinkersarsenal.modules.base.tools.BaseTools;
 
 /**
  * Created by RedstoneParadox on 8/2/2018.
@@ -43,7 +43,7 @@ public class TARenderEvents {
     }
 
     private static boolean isCarryingLoadedBoomstick(EntityPlayer player, EnumHand hand) {
-        if (player.getHeldItem(hand).getItem() == BaseTools.boomstick) {
+        if (player.getHeldItem(hand).getItem() == ArsenalTools.boomstick) {
             if (player.getHeldItem(hand).getTagCompound().getBoolean("Loaded")) {
                 return true;
             }

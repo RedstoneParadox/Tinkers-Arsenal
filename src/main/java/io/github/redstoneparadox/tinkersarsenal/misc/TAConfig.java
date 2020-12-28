@@ -1,8 +1,8 @@
 package io.github.redstoneparadox.tinkersarsenal.misc;
 
-import net.minecraftforge.common.config.Config;
 import io.github.redstoneparadox.tinkersarsenal.TAProperties;
 import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
+import net.minecraftforge.common.config.Config;
 
 import java.util.HashMap;
 import java.util.Map;

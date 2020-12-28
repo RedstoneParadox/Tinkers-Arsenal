@@ -1,13 +1,13 @@
 package io.github.redstoneparadox.tinkersarsenal.events;
 
+import io.github.redstoneparadox.tinkersarsenal.TAProperties;
+import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalMaterial;
+import io.github.redstoneparadox.tinkersarsenal.misc.TAConfig;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import io.github.redstoneparadox.tinkersarsenal.TAProperties;
-import io.github.redstoneparadox.tinkersarsenal.misc.TAConfig;
-import io.github.redstoneparadox.tinkersarsenal.misc.TAMaterial;
 import slimeknights.tconstruct.library.events.MaterialEvent;
 import slimeknights.tconstruct.library.materials.Material;
 
@@ -29,7 +29,7 @@ public class TARegistryEvents {
     public void onMaterialRegistry(MaterialEvent.MaterialRegisterEvent event) {
         Material material = event.material;
 
-        if (!(material instanceof TAMaterial) && TAConfig.isMaterialAllowed(material.getIdentifier())) {
+        if (!(material instanceof ArsenalMaterial) && TAConfig.isMaterialAllowed(material.getIdentifier())) {
             event.setCanceled(true);
         }
         event.setCanceled(false);

@@ -1,5 +1,13 @@
 package io.github.redstoneparadox.tinkersarsenal.proxy;
 
+import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
+import io.github.redstoneparadox.tinkersarsenal.entities.TAEntities;
+import io.github.redstoneparadox.tinkersarsenal.events.TARegistryEvents;
+import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalArmorMaterials;
+import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalMaterials;
+import io.github.redstoneparadox.tinkersarsenal.tools.ArsenalTools;
+import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalArmorTraits;
+import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalToolTraits;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -13,10 +21,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.registries.IForgeRegistry;
-import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
-import io.github.redstoneparadox.tinkersarsenal.entities.TAEntities;
-import io.github.redstoneparadox.tinkersarsenal.events.TARegistryEvents;
-import io.github.redstoneparadox.tinkersarsenal.modules.Modules;
 import slimeknights.tconstruct.library.tools.IToolPart;
 import slimeknights.tconstruct.library.tools.ToolCore;
 
@@ -27,10 +31,14 @@ import slimeknights.tconstruct.library.tools.ToolCore;
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         MinecraftForge.EVENT_BUS.register(new TARegistryEvents());
+        ArsenalToolTraits.initToolTraits();
+        ArsenalMaterials.initMaterials();
 
-        //Module stuff:
-        Modules.createModules();
-        Modules.initModules(Loader.isModLoaded("conarm"));
+        if (Loader.isModLoaded("conarm")) {
+            ArsenalArmorTraits.initArmorTraits();
+            ArsenalArmorMaterials.initArmorMaterials();
+        }
+
         TAEntities.init();
     }
 
@@ -47,7 +55,7 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> registry = event.getRegistry();
-        Modules.initTools(registry);
+        ArsenalTools.initToolParts(registry);
     }
 
     @SubscribeEvent

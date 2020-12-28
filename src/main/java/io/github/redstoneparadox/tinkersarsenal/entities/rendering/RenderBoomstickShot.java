@@ -1,7 +1,7 @@
 package io.github.redstoneparadox.tinkersarsenal.entities.rendering;
 
-import net.minecraft.client.renderer.entity.RenderManager;
 import io.github.redstoneparadox.tinkersarsenal.entities.EntityBoomstickShot;
+import net.minecraft.client.renderer.entity.RenderManager;
 import slimeknights.tconstruct.library.client.renderer.RenderProjectileBase;
 
 /**
