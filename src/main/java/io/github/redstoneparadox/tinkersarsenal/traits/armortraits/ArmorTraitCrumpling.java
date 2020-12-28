@@ -25,6 +25,4 @@ public class ArmorTraitCrumpling extends AbstractArmorTrait {
 
 		return super.onHurt(armor, player, source, damage, newDamage, evt);
 	}
-
-
 }
