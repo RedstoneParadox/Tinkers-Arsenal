@@ -44,12 +44,7 @@ public class TARenderEvents {
 
     private static boolean isCarryingLoadedBoomstick(EntityPlayer player, EnumHand hand) {
         if (player.getHeldItem(hand).getItem() == ArsenalTools.boomstick) {
-            if (player.getHeldItem(hand).getTagCompound().getBoolean("Loaded")) {
-                return true;
-            }
-            else {
-                return false;
-            }
+            return player.getHeldItem(hand).getTagCompound().getBoolean("Loaded");
         }
         else {
             return false;
