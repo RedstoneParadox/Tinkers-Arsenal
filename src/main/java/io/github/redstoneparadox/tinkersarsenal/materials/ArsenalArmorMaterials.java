@@ -16,9 +16,9 @@ import slimeknights.tconstruct.library.traits.AbstractTrait;
 import java.util.ArrayList;
 
 public class ArsenalArmorMaterials {
-	protected static String PART_CORE = ArmorMaterialType.CORE;
-	protected static String PART_PLATE = ArmorMaterialType.PLATES;
-	protected static String PART_TRIM = ArmorMaterialType.TRIM;
+	protected static final String PART_CORE = ArmorMaterialType.CORE;
+	protected static final String PART_PLATE = ArmorMaterialType.PLATES;
+	protected static final String PART_TRIM = ArmorMaterialType.TRIM;
 
 	public static void initArmorMaterials() {
 		//Gold:
@@ -44,6 +44,7 @@ public class ArsenalArmorMaterials {
 
 		if (isRegistrable("aluminum")) {
 			Material aluminum = TinkerRegistry.getMaterial("aluminum");
+			aluminum.addTrait(ArsenalArmorTraits.CRUMPLING, PART_CORE)
 			addTraits(aluminum, ArsenalArmorTraits.CRUMPLING);
 			addArmorStats(aluminum, 1f, 10f, 0.7f, 1f, 0f, 1f);
 		}
