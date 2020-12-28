@@ -67,10 +67,10 @@ dependencies {
     deobfCompile "slimeknights:TConstruct:1.12.2-2.13.0.183"
 
     compile "curse.maven:conarm-287683:2962662"
-    compile "curse.maven:MMDlib-261744:2712947"
-    compile "curse.maven:BaseMetals-240967:2712965"
-    compile "curse.maven:ModernMetals-244357:2712959"
-    //compile files('lib/libraryparadox-1.0.0.jar')
+    compile "curse.maven:redstoneflux-270789:2920436"
+    compile "curse.maven:CoFHCore-69162:2920433"
+    compile "curse.maven:CoFHWorld-271384:2920434"
+    compile "curse.maven:ThermalFoundation-222880:2926428"
 }
 
 processResources {
