@@ -21,22 +21,22 @@ public class ArsenalConfig {
     @Config.Ignore
     private static final String shaftText  = " as a shaft material.";
     @Config.Ignore
-    private static final String notImp = "(Not implemented yet!)";
+    private static final String notImp = " (Not implemented yet!)";
     @Config.Ignore
     private static final String setCompat = "Enable/disable material compatibility for ";
 
     @Config.LangKey("category.misc.name")
     @Config.Comment("Like it says on the tin.")
-    public static final MiscellaneousOptions miscOptions = new MiscellaneousOptions();
+    public static final MiscellaneousOptions MISCELLANEOUS_OPTIONS = new MiscellaneousOptions();
     @Config.LangKey("category.base.name")
     @Config.Comment("Enable/disable materials added by Tinker's Arsenal")
-    public static final BaseCategory baseCategory = new BaseCategory();
+    public static final BaseCategory BASE_CATEGORY = new BaseCategory();
     @Config.LangKey("category.ore.name")
     @Config.Comment(setCompat + "common modded materials.")
-    public static final OreDictCategory oreDictCategory = new OreDictCategory();
+    public static final OreDictionaryCategory ORE_DICTIONARY_CATEGORY = new OreDictionaryCategory();
     @Config.LangKey("category.foundation.name")
     @Config.Comment(setCompat + "Thermal Foundation")
-    public static final TECategory teCategory = new TECategory();
+    public static final ThermalExpansionCategory THERMAL_EXPANSION_CATEGORY = new ThermalExpansionCategory();
 
     public static class MiscellaneousOptions {
 
@@ -44,49 +44,49 @@ public class ArsenalConfig {
 
     public static class BaseCategory {
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Gold" + notImp})
+        @Config.Comment({disableText + "Gold."})
         public boolean gold = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Diamond"})
+        @Config.Comment({disableText + "Diamond."})
         public boolean diamond = true;
     }
 
-    public static class OreDictCategory {
+    public static class OreDictionaryCategory {
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Tin" + notImp})
+        @Config.Comment({disableText + "Tin." + notImp})
         public boolean tin = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Aluminum" + notImp})
+        @Config.Comment({disableText + "Aluminum."})
         public boolean aluminum = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Constantan" + notImp})
+        @Config.Comment({disableText + "Constantan." + notImp})
         public boolean constantan = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Nickel" + notImp})
+        @Config.Comment({disableText + "Nickel." + notImp})
         public boolean nickel = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Platinum" + notImp})
+        @Config.Comment({disableText + "Platinum." + notImp})
         public boolean platinum = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Iridium" + notImp})
+        @Config.Comment({disableText + "Iridium." + notImp})
         public boolean iridium = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Mithril/Mana Infused Metal" + notImp})
+        @Config.Comment({disableText + "Mithril/Mana Infused Metal." + notImp})
         public boolean mithril = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Invar" + notImp})
+        @Config.Comment({disableText + "Invar." + notImp})
         public boolean invar = true;
     }
 
-    public static class TECategory {
+    public static class ThermalExpansionCategory {
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Luminum" + notImp})
+        @Config.Comment({disableText + "Luminum." + notImp})
         public boolean luminum = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Signalium" + notImp})
+        @Config.Comment({disableText + "Signalium." + notImp})
         public boolean signalium = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Enderium" + notImp})
+        @Config.Comment({disableText + "Enderium." + notImp})
         public boolean enderium = true;
         @Config.RequiresMcRestart
         @Config.Comment({disableText + "Blizz Rod" + shaftText + notImp})
@@ -112,26 +112,26 @@ public class ArsenalConfig {
     private static Map<String, Boolean> getMaterialTypes() {
         Map<String, Boolean> map = new HashMap<>();
         //Base materials:
-        map.put("gold", baseCategory.gold);
-        map.put("diamond", baseCategory.diamond);
+        map.put("gold", BASE_CATEGORY.gold);
+        map.put("diamond", BASE_CATEGORY.diamond);
         //Common ore-dict materials:
-        map.put("tin", oreDictCategory.tin);
-        map.put("aluminum", oreDictCategory.aluminum);
-        map.put("constantan", oreDictCategory.constantan);
-        map.put("nickel", oreDictCategory.nickel);
-        map.put("platinum", oreDictCategory.platinum);
-        map.put("iridium", oreDictCategory.iridium);
-        map.put("manaInfusedMetal", oreDictCategory.mithril);
-        map.put("mithril", oreDictCategory.mithril);
-        map.put("invar", oreDictCategory.invar);
+        map.put("tin", ORE_DICTIONARY_CATEGORY.tin);
+        map.put("aluminum", ORE_DICTIONARY_CATEGORY.aluminum);
+        map.put("constantan", ORE_DICTIONARY_CATEGORY.constantan);
+        map.put("nickel", ORE_DICTIONARY_CATEGORY.nickel);
+        map.put("platinum", ORE_DICTIONARY_CATEGORY.platinum);
+        map.put("iridium", ORE_DICTIONARY_CATEGORY.iridium);
+        map.put("manaInfusedMetal", ORE_DICTIONARY_CATEGORY.mithril);
+        map.put("mithril", ORE_DICTIONARY_CATEGORY.mithril);
+        map.put("invar", ORE_DICTIONARY_CATEGORY.invar);
         //Thermal Foundation Materials:
-        map.put("luminum", teCategory.luminum);
-        map.put("signalium", teCategory.signalium);
-        map.put("enderium", teCategory.enderium);
+        map.put("luminum", THERMAL_EXPANSION_CATEGORY.luminum);
+        map.put("signalium", THERMAL_EXPANSION_CATEGORY.signalium);
+        map.put("enderium", THERMAL_EXPANSION_CATEGORY.enderium);
         //Thermal Foundation Shaft Materials:
-        map.put("blizz_rod", teCategory.blizz);
-        map.put("blitz_rod", teCategory.blitz);
-        map.put("baltz_rod", teCategory.baltz);
+        map.put("blizz_rod", THERMAL_EXPANSION_CATEGORY.blizz);
+        map.put("blitz_rod", THERMAL_EXPANSION_CATEGORY.blitz);
+        map.put("baltz_rod", THERMAL_EXPANSION_CATEGORY.baltz);
         return map;
     }
 }
