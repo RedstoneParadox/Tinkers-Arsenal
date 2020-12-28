@@ -27,7 +27,7 @@ public class ArsenalConfig {
 
     @Config.LangKey("category.misc.name")
     @Config.Comment("Like it says on the tin.")
-    public static final miscOptions miscOptions = new miscOptions();
+    public static final MiscellaneousOptions miscOptions = new MiscellaneousOptions();
     @Config.LangKey("category.base.name")
     @Config.Comment("Enable/disable materials added by Tinker's Arsenal")
     public static final BaseCategory baseCategory = new BaseCategory();
@@ -38,7 +38,7 @@ public class ArsenalConfig {
     @Config.Comment(setCompat + "Thermal Foundation")
     public static final TECategory teCategory = new TECategory();
 
-    public static class miscOptions {
+    public static class MiscellaneousOptions {
 
     }
 
