@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
         modid = ArsenalProperties.MOD_ID,
         name = ArsenalProperties.MOD_NAME,
         version = ArsenalProperties.VERSION,
-        dependencies = "required-after:tconstruct@[1.12.2-2.10.1.87,);" +
+        dependencies = "required-after:tconstruct@[1.12.2-2.13.0.183,);" +
                 "after:conarm;" +
                 "after:tinkerscompendium;" +
                 "after:plustic;" +
