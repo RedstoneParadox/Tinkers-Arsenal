@@ -19,7 +19,9 @@ import org.apache.logging.log4j.Logger;
                 "after:tinkerscompendium;" +
                 "after:plustic;" +
                 "after:moartinkers;" +
-                "after:thermalfoundation;",
+                "after:thermalfoundation;" +
+                "after:basemetals;" +
+                "after:modernmetals;",
         useMetadata = true
 )
 public class TinkersArsenal {

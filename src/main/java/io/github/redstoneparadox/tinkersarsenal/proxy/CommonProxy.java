@@ -2,7 +2,7 @@ package io.github.redstoneparadox.tinkersarsenal.proxy;
 
 import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
 import io.github.redstoneparadox.tinkersarsenal.entities.TAEntities;
-import io.github.redstoneparadox.tinkersarsenal.events.TARegistryEvents;
+import io.github.redstoneparadox.tinkersarsenal.events.ArsenalRegistryEvents;
 import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalArmorMaterials;
 import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalMaterials;
 import io.github.redstoneparadox.tinkersarsenal.tools.ArsenalTools;
@@ -30,7 +30,7 @@ import slimeknights.tconstruct.library.tools.ToolCore;
 @Mod.EventBusSubscriber
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
-        MinecraftForge.EVENT_BUS.register(new TARegistryEvents());
+        MinecraftForge.EVENT_BUS.register(new ArsenalRegistryEvents());
         ArsenalToolTraits.initToolTraits();
         ArsenalMaterials.initMaterials();
 
