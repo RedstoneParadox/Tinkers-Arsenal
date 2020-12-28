@@ -1,8 +1,8 @@
 package io.github.redstoneparadox.tinkersarsenal.events;
 
-import io.github.redstoneparadox.tinkersarsenal.TAProperties;
+import io.github.redstoneparadox.tinkersarsenal.ArsenalProperties;
 import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalMaterial;
-import io.github.redstoneparadox.tinkersarsenal.misc.TAConfig;
+import io.github.redstoneparadox.tinkersarsenal.misc.ArsenalConfig;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -14,14 +14,14 @@ import slimeknights.tconstruct.library.materials.Material;
 /**
  * Created by RedstoneParadox on 8/26/2018.
  */
-@Mod.EventBusSubscriber(modid = TAProperties.MOD_ID)
-public class TARegistryEvents {
+@Mod.EventBusSubscriber(modid = ArsenalProperties.MOD_ID)
+public class ArsenalRegistryEvents {
     @SubscribeEvent
     public void onConfigChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event)
     {
-        if (event.getModID().equals(TAProperties.MOD_ID))
+        if (event.getModID().equals(ArsenalProperties.MOD_ID))
         {
-            ConfigManager.sync(TAProperties.MOD_ID, Config.Type.INSTANCE);
+            ConfigManager.sync(ArsenalProperties.MOD_ID, Config.Type.INSTANCE);
         }
     }
 
@@ -29,7 +29,7 @@ public class TARegistryEvents {
     public void onMaterialRegistry(MaterialEvent.MaterialRegisterEvent event) {
         Material material = event.material;
 
-        if (!(material instanceof ArsenalMaterial) && TAConfig.isMaterialAllowed(material.getIdentifier())) {
+        if (!(material instanceof ArsenalMaterial) && ArsenalConfig.isMaterialAllowed(material.getIdentifier())) {
             event.setCanceled(true);
         }
         event.setCanceled(false);

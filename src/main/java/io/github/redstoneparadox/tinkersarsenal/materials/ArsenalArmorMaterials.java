@@ -5,7 +5,7 @@ import c4.conarm.lib.materials.CoreMaterialStats;
 import c4.conarm.lib.materials.PlatesMaterialStats;
 import c4.conarm.lib.materials.TrimMaterialStats;
 import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
-import io.github.redstoneparadox.tinkersarsenal.misc.TAConfig;
+import io.github.redstoneparadox.tinkersarsenal.misc.ArsenalConfig;
 import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalArmorTraits;
 import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalToolTraits;
 import net.minecraftforge.fluids.Fluid;
@@ -84,7 +84,7 @@ public class ArsenalArmorMaterials {
 	}
 
 	protected static boolean isRegistrable(String id) {
-		return TinkerRegistry.getMaterial(id) instanceof ArsenalMaterial && TAConfig.isMaterialAllowed(id);
+		return TinkerRegistry.getMaterial(id) instanceof ArsenalMaterial && ArsenalConfig.isMaterialAllowed(id);
 	}
 
 	protected static void setCraftability(Material material, String item, Fluid fluid) {

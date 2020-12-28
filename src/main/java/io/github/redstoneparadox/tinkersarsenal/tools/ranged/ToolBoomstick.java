@@ -1,7 +1,7 @@
 package io.github.redstoneparadox.tinkersarsenal.tools.ranged;
 
 import com.google.common.collect.ImmutableList;
-import io.github.redstoneparadox.tinkersarsenal.misc.TASounds;
+import io.github.redstoneparadox.tinkersarsenal.misc.ArsenalSounds;
 import io.github.redstoneparadox.tinkersarsenal.tools.ArsenalTools;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -172,7 +172,7 @@ public class ToolBoomstick extends BowCore implements ICustomCrosshairUser{
 
     @Override
     public void playShootSound(float power, World world, EntityPlayer entityPlayer) {
-        world.playSound(null, entityPlayer.posX, entityPlayer.posY, entityPlayer.posZ, TASounds.BOOMSTICK_SHOT, SoundCategory.NEUTRAL, 1.0F, 0.5f + itemRand.nextFloat() * 0.1f);
+        world.playSound(null, entityPlayer.posX, entityPlayer.posY, entityPlayer.posZ, ArsenalSounds.BOOMSTICK_SHOT, SoundCategory.NEUTRAL, 1.0F, 0.5f + itemRand.nextFloat() * 0.1f);
     }
 
     @Override

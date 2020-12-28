@@ -1,7 +1,7 @@
 package io.github.redstoneparadox.tinkersarsenal.proxy;
 
-import io.github.redstoneparadox.tinkersarsenal.entities.TAEntities;
-import io.github.redstoneparadox.tinkersarsenal.events.TARenderEvents;
+import io.github.redstoneparadox.tinkersarsenal.entities.ArsenalEntities;
+import io.github.redstoneparadox.tinkersarsenal.events.ArsenalRenderEvents;
 import io.github.redstoneparadox.tinkersarsenal.tools.ArsenalTools;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -23,8 +23,8 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
-        TAEntities.initModels();
-        MinecraftForge.EVENT_BUS.register(new TARenderEvents());
+        ArsenalEntities.initModels();
+        MinecraftForge.EVENT_BUS.register(new ArsenalRenderEvents());
     }
 
     @SubscribeEvent

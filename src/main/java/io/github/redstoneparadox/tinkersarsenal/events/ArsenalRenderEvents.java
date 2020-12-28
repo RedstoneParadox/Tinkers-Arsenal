@@ -15,7 +15,7 @@ import net.minecraftforge.fml.relauncher.Side;
  * Created by RedstoneParadox on 8/2/2018.
  */
 @Mod.EventBusSubscriber(Side.CLIENT)
-public class TARenderEvents {
+public class ArsenalRenderEvents {
     @SubscribeEvent
     public static void onEvent(RenderLivingEvent.Pre<EntityPlayer> event) {
         if (!(event.getEntity() instanceof EntityPlayer)) {

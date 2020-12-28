@@ -1,6 +1,6 @@
 package io.github.redstoneparadox.tinkersarsenal.misc;
 
-import io.github.redstoneparadox.tinkersarsenal.TAProperties;
+import io.github.redstoneparadox.tinkersarsenal.ArsenalProperties;
 import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
 import net.minecraftforge.common.config.Config;
 
@@ -10,8 +10,8 @@ import java.util.Map;
 /**
  * Created by RedstoneParadox on 8/23/2018.
  */
-@Config(modid = TAProperties.MOD_ID, type = Config.Type.INSTANCE, name = "TinkersArsenal")
-public class TAConfig {
+@Config(modid = ArsenalProperties.MOD_ID, type = Config.Type.INSTANCE, name = "TinkersArsenal")
+public class ArsenalConfig {
     //Misc:
     @Config.Ignore
     private static int version = 1;

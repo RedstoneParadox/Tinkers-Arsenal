@@ -11,9 +11,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
 @Mod(
-        modid = TAProperties.MOD_ID,
-        name = TAProperties.MOD_NAME,
-        version = TAProperties.VERSION,
+        modid = ArsenalProperties.MOD_ID,
+        name = ArsenalProperties.MOD_NAME,
+        version = ArsenalProperties.VERSION,
         dependencies = "required-after:tconstruct@[1.12.2-2.10.1.87,);" +
                 "after:conarm;" +
                 "after:tinkerscompendium;" +
@@ -27,13 +27,13 @@ import org.apache.logging.log4j.Logger;
 public class TinkersArsenal {
     public static Logger logger;
 
-    @SidedProxy(clientSide = TAProperties.CLIENT_PROXY, serverSide = TAProperties.SERVER_PROXY)
+    @SidedProxy(clientSide = ArsenalProperties.CLIENT_PROXY, serverSide = ArsenalProperties.SERVER_PROXY)
     public static CommonProxy proxy;
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.
      */
-    @Mod.Instance(TAProperties.MOD_ID)
+    @Mod.Instance(ArsenalProperties.MOD_ID)
     public static TinkersArsenal INSTANCE;
 
     /**
@@ -43,7 +43,7 @@ public class TinkersArsenal {
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
-        ConfigManager.sync(TAProperties.MOD_ID, Config.Type.INSTANCE);
+        ConfigManager.sync(ArsenalProperties.MOD_ID, Config.Type.INSTANCE);
         proxy.preInit(event);
     }
 

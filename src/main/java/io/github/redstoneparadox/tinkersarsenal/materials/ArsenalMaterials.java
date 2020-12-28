@@ -1,7 +1,7 @@
 package io.github.redstoneparadox.tinkersarsenal.materials;
 
 import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
-import io.github.redstoneparadox.tinkersarsenal.misc.TAConfig;
+import io.github.redstoneparadox.tinkersarsenal.misc.ArsenalConfig;
 import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalToolTraits;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -53,8 +53,6 @@ public class ArsenalMaterials {
 			diamond.setRepresentativeItem(new ItemStack(Items.DIAMOND));
 			TinkerRegistry.addMaterial(diamond);
 		}
-
-		System.out.println(Arrays.toString(OreDictionary.getOreNames()));
 
 		if (isRegistrable("tin") && OreDictionary.doesOreNameExist("ingotTin")) {
 			ArsenalMaterial tin = new ArsenalMaterial("tin", 0xC3E6E6);
@@ -120,7 +118,7 @@ public class ArsenalMaterials {
 	}
 
 	protected static boolean isRegistrable(String id) {
-		if (TinkerRegistry.getMaterial(id) == Material.UNKNOWN && TAConfig.isMaterialAllowed(id)) {
+		if (TinkerRegistry.getMaterial(id) == Material.UNKNOWN && ArsenalConfig.isMaterialAllowed(id)) {
 			return true;
 		}
 		return false;

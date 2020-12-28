@@ -1,7 +1,7 @@
 package io.github.redstoneparadox.tinkersarsenal.proxy;
 
 import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
-import io.github.redstoneparadox.tinkersarsenal.entities.TAEntities;
+import io.github.redstoneparadox.tinkersarsenal.entities.ArsenalEntities;
 import io.github.redstoneparadox.tinkersarsenal.events.ArsenalRegistryEvents;
 import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalArmorMaterials;
 import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalMaterials;
@@ -39,7 +39,7 @@ public class CommonProxy {
             ArsenalArmorMaterials.initArmorMaterials();
         }
 
-        TAEntities.init();
+        ArsenalEntities.init();
     }
 
     public void init(FMLInitializationEvent e) {
