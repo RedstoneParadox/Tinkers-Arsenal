@@ -1,6 +1,7 @@
 package io.github.redstoneparadox.tinkersarsenal.traits.armortraits;
 
 import c4.conarm.lib.traits.AbstractArmorTrait;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -20,12 +21,12 @@ public class ArmorTraitResilience extends AbstractArmorTrait {
     }
 
     @Override
-    public float onDamaged(ItemStack armor, EntityPlayer player, DamageSource source, float damage, float newDamage, LivingDamageEvent evt) {
-        if(player.getEntityWorld().isRemote) {
+    public int onToolDamage(ItemStack tool, int damage, int newDamage, EntityLivingBase entity) {
+        if (entity.getEntityWorld().isRemote) {
             return 0;
         }
 
-        NBTTagCompound tag = armor.getTagCompound();
+        NBTTagCompound tag = tool.getTagCompound();
         int baseDurability = tag.getCompoundTag("Stats").getInteger("Durability");
         int damageTaken = tag.getInteger("Damage");
 
