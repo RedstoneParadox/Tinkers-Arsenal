@@ -51,6 +51,8 @@ modifier.resilience.name=Resilience
 modifier.resilience.desc=§oTougher than Tough!§r\nThe resilience is strong with this one.
 modifier.malleable.name=Malleable
 modifier.malleable.desc=§oMalleability = More effective modifiers!§r\nI mean, why else would you make tools out of this?
+modifier.crumpling.name=Crumpling
+modifier.crumpling.desc=§oImpact Absorbent!§r\nLess damage to you, more damage to your armor.
 modifier.missingno.name=Misingno!
 modifier.misingno.desc=§oNot a gltich...§r\n...just a placeholder.
 

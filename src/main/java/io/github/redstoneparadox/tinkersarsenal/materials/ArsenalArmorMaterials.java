@@ -44,7 +44,7 @@ public class ArsenalArmorMaterials {
 
 		if (isRegistrable("aluminum")) {
 			Material aluminum = TinkerRegistry.getMaterial("aluminum");
-			addTraits(aluminum, ArsenalToolTraits.MISSINGNO);
+			addTraits(aluminum, ArsenalArmorTraits.CRUMPLING);
 			addArmorStats(aluminum, 1f, 10f, 0.7f, 1f, 0f, 1f);
 		}
 

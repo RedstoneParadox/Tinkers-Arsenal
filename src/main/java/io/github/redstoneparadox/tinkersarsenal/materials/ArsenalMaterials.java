@@ -12,6 +12,7 @@ import slimeknights.tconstruct.library.materials.*;
 import slimeknights.tconstruct.library.traits.AbstractTrait;
 import slimeknights.tconstruct.library.utils.HarvestLevels;
 import slimeknights.tconstruct.shared.TinkerFluids;
+import slimeknights.tconstruct.tools.TinkerTraits;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -65,7 +66,8 @@ public class ArsenalMaterials {
 		if (isRegistrable("aluminum") && OreDictionary.doesOreNameExist("ingotAluminum")) {
 			ArsenalMaterial aluminum = new ArsenalMaterial("aluminum", 0xE6E6F2);
 			setCraftability(aluminum, "ingotAluminum", TinkerFluids.aluminum);
-			aluminum.addTrait(ArsenalToolTraits.MALLEABLE, PART_HEAD);
+			aluminum.addTrait(TinkerTraits.lightweight, PART_HEAD);
+			addTraits(aluminum, TinkerTraits.lightweight);
 			addStats(aluminum, 150, 10, 4.00f, HV1FE, 0.5f, -75, 50, 0.5f, 1.5f, 1.75f);
 			TinkerRegistry.addMaterial(aluminum);
 		}

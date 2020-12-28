@@ -16,14 +16,6 @@ public class ArsenalToolTraits {
     public static final AbstractTrait RESILIENCE = new TraitResilience();
     public static final AbstractTrait MALLEABLE = new TraitMalleable();
 
-    public ArsenalToolTraits() {
-        //Tool materials
-        TinkerRegistry.addTrait(MISSINGNO);
-        TinkerRegistry.addTrait(DIAMOND_EDGE);
-        TinkerRegistry.addTrait(RESILIENCE);
-        TinkerRegistry.addTrait(MALLEABLE);
-    }
-
     public static void initToolTraits() {
         TinkerRegistry.addTrait(MISSINGNO);
         TinkerRegistry.addTrait(DIAMOND_EDGE);
