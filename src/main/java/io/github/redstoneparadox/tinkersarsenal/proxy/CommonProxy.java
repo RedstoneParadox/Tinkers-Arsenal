@@ -4,7 +4,7 @@ import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
 import io.github.redstoneparadox.tinkersarsenal.entities.ArsenalEntities;
 import io.github.redstoneparadox.tinkersarsenal.events.ArsenalRegistryEvents;
 import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalArmorMaterials;
-import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalMaterials;
+import io.github.redstoneparadox.tinkersarsenal.materials.ArsenalToolMaterials;
 import io.github.redstoneparadox.tinkersarsenal.tools.ArsenalTools;
 import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalArmorTraits;
 import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalToolTraits;
@@ -32,7 +32,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         MinecraftForge.EVENT_BUS.register(new ArsenalRegistryEvents());
         ArsenalToolTraits.initToolTraits();
-        ArsenalMaterials.initMaterials();
+        ArsenalToolMaterials.initMaterials();
 
         if (Loader.isModLoaded("conarm")) {
             ArsenalArmorTraits.initArmorTraits();

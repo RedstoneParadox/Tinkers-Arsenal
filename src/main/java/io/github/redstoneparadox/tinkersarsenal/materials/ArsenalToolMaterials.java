@@ -17,7 +17,7 @@ import slimeknights.tconstruct.tools.TinkerTraits;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ArsenalMaterials {
+public class ArsenalToolMaterials {
 	//Harvest Levels:
 	protected static final int HV0ROCK = HarvestLevels.STONE;
 	protected static final int HV1FE = HarvestLevels.IRON;
