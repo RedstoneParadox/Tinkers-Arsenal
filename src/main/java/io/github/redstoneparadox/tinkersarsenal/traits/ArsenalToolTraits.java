@@ -11,7 +11,7 @@ public class ArsenalToolTraits {
     public static final AbstractTrait MISSINGNO = new TraitMissingno();
     public static final AbstractTrait DIAMOND_EDGE = new TraitDiamondEdge();
     public static final AbstractTrait RESILIENCE = new TraitResilience();
-    public static final AbstractTrait MALLEABLE = new TraitMalleable();
+    public static final AbstractTrait MALLEABLE = new TraitMalleable(1);
     // Shaft traits
     public static final AbstractTrait SWIFT_FLIGHT = new TraitSwiftFlight();
     public static final AbstractTrait GROUNDING = new TraitGrounding();
