@@ -83,8 +83,9 @@ public class ArsenalArmorMaterials {
 
 		if (isRegistrable("invar")) {
 			Material invar = TinkerRegistry.getMaterial("invar");
-			addTraits(invar, ArsenalToolTraits.MISSINGNO);
-			addArmorStats(invar, 1f, 16f, 1.5f, 1f, 2f, 1f);
+			invar.addTrait(ArsenalArmorTraits.ENDURING, PART_CORE);
+			addTraits(invar, ArsenalArmorTraits.ENDURING);
+			addArmorStats(invar, 13f, 16f, 1.3f, 3.5f, 1f, 1f);
 		}
 	}
 

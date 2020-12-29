@@ -74,7 +74,7 @@ public class ArsenalConfig {
         @Config.Comment({disableText + "Mithril/Mana Infused Metal." + notImp})
         public boolean mithril = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Invar." + notImp})
+        @Config.Comment({disableText + "Invar."})
         public boolean invar = true;
     }
 

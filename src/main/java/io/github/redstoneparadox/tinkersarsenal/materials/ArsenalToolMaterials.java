@@ -123,12 +123,13 @@ public class ArsenalToolMaterials {
 		}
 
 		if (isRegistrable("invar") && OreDictionary.doesOreNameExist("ingotInvar")) {
-			ArsenalMaterial invar = new ArsenalMaterial("invar", 0xE1E7E5);
+			ArsenalMaterial invar = new ArsenalMaterial("invar", 0xB4BCB9);
 			setCraftability(invar, "ingotInvar");
-			addTraits(invar, ArsenalToolTraits.MISSINGNO);
+			invar.addTrait(ArsenalToolTraits.ENDURING, PART_HEAD);
+			addTraits(invar, ArsenalToolTraits.ENDURING);
 			addStats(invar, 175, 6.50f, 5.50f, HV2DIA, 1.5f, 50, 250, 0.5f, 1.5f, 1.75f);
 			invar.setRepresentativeItem(OreDictionary.getOres("ingotInvar").get(0));
-			//TinkerRegistry.addMaterial(invar);
+			TinkerRegistry.addMaterial(invar);
 		}
 
 		if (Loader.isModLoaded("thermalfoundation")) {

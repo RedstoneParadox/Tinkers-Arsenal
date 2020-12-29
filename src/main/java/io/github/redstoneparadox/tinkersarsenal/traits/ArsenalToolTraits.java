@@ -10,6 +10,7 @@ import slimeknights.tconstruct.library.traits.AbstractTrait;
 public class ArsenalToolTraits {
     public static final AbstractTrait MISSINGNO = new TraitMissingno();
     public static final AbstractTrait DIAMOND_EDGE = new TraitDiamondEdge();
+    public static final AbstractTrait ENDURING = new TraitEnduring();
     public static final AbstractTrait RESILIENCE = new TraitResilience();
     public static final AbstractTrait MALLEABLE = new TraitMalleable(1);
     // Shaft traits
@@ -20,6 +21,7 @@ public class ArsenalToolTraits {
     public static void initToolTraits() {
         TinkerRegistry.addTrait(MISSINGNO);
         TinkerRegistry.addTrait(DIAMOND_EDGE);
+        TinkerRegistry.addTrait(ENDURING);
         TinkerRegistry.addTrait(RESILIENCE);
         TinkerRegistry.addTrait(MALLEABLE);
         TinkerRegistry.addTrait(SWIFT_FLIGHT);
