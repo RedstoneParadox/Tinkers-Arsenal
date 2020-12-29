@@ -61,9 +61,9 @@ modifier.hard_hitting.desc=§oHuge Impact!§r\nDoesn't pull its punches.
 modifier.resilience.name=Resilience
 modifier.resilience.desc=§oTougher than Tough!§r\nThe resilience is strong with this one.
 modifier.malleable.name=Malleable
-modifier.malleable.desc=§oMalleability = More effective modifiers!§r\nI mean, why else would you make tools out of this?
+modifier.malleable.desc=§oMore Malleable = More Modifiers!§r\nThis feels like a lazy copy of some other material...
 modifier.missingno.name=Misingno!
-modifier.misingno.desc=§oNot a gltich...§r\n...just a placeholder.
+modifier.missingno.desc=§oNot a gltich...§r\n...just a placeholder.
 modifier.swift_flight.name=Swift Flight
 modifier.swift_flight.desc=§oSoars like a bird!§r\nMoves faster than other projectiles.
 
