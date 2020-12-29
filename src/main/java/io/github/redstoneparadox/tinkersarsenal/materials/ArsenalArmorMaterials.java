@@ -25,8 +25,8 @@ public class ArsenalArmorMaterials {
 		//Gold:
 		if (isRegistrable("gold")) {
 			Material gold = TinkerRegistry.getMaterial("gold");
-			addTraits(gold, ArsenalArmorTraits.ANTI_CORROSIVE, PART_CORE);
-			addTraits(gold, ArsenalArmorTraits.ANTI_CORROSIVE);
+			addTraits(gold, ArsenalToolTraits.MALLEABLE, PART_CORE);
+			addTraits(gold, ArsenalToolTraits.MALLEABLE);
 			addArmorStats(gold, 8.8f, 11f, 0.1f, 5.8f, 0.0f, 4.5f);
 		}
 		//Diamond:
