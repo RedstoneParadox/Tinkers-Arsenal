@@ -169,10 +169,7 @@ public class ArsenalToolMaterials {
 	}
 
 	protected static boolean isRegistrable(String id) {
-		if (TinkerRegistry.getMaterial(id) == Material.UNKNOWN && ArsenalConfig.isMaterialAllowed(id)) {
-			return true;
-		}
-		return false;
+		return TinkerRegistry.getMaterial(id) == Material.UNKNOWN && ArsenalConfig.isMaterialAllowed(id);
 	}
 
 	protected static void setCraftability(Material material, String item, Fluid fluid) {
