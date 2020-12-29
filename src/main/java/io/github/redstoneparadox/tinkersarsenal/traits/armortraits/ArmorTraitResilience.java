@@ -36,11 +36,10 @@ public class ArmorTraitResilience extends AbstractArmorTrait {
 
         if ((damageChance.nextInt(baseDurability * 2) + 1) <= remainingDurability) {
             newDamage = 0;
-            return newDamage;
         }
         else {
             newDamage = damage;
-            return newDamage;
         }
+        return newDamage;
     }
 }
