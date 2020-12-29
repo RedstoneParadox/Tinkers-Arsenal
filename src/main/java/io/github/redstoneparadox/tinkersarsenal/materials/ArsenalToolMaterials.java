@@ -105,7 +105,7 @@ public class ArsenalToolMaterials {
 		}
 
 		if (isRegistrable("iridium") && OreDictionary.doesOreNameExist("ingotIridium")) {
-			ArsenalMaterial iridium = new ArsenalMaterial("iridium", 0xEBE9EF);
+			ArsenalMaterial iridium = new ArsenalMaterial("iridium", 0xD4D2E2);
 			setCraftability(iridium, "ingotIridium");
 			iridium.addTrait(ArsenalToolTraits.HARD_HITTING);
 			iridium.addTrait(TinkerTraits.heavy, PART_HEAD);
