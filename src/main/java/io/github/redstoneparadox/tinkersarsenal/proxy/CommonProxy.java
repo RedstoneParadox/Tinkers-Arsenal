@@ -32,7 +32,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         MinecraftForge.EVENT_BUS.register(new ArsenalRegistryEvents());
         ArsenalToolTraits.initToolTraits();
-        ArsenalToolMaterials.initMaterials();
+        ArsenalToolMaterials.initToolMaterials();
 
         if (Loader.isModLoaded("conarm")) {
             ArsenalArmorTraits.initArmorTraits();

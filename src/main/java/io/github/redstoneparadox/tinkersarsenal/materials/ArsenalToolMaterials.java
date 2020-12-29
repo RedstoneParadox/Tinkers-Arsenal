@@ -4,8 +4,13 @@ import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
 import io.github.redstoneparadox.tinkersarsenal.misc.ArsenalConfig;
 import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalToolTraits;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.oredict.OreDictionary;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.*;
@@ -15,7 +20,7 @@ import slimeknights.tconstruct.shared.TinkerFluids;
 import slimeknights.tconstruct.tools.TinkerTraits;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Objects;
 
 public class ArsenalToolMaterials {
 	//Harvest Levels:
@@ -33,7 +38,7 @@ public class ArsenalToolMaterials {
 	protected static final String PART_SHAFT = MaterialTypes.SHAFT;
 	protected static final String PART_FLETCHING = MaterialTypes.FLETCHING;
 
-	public static void initMaterials() {
+	public static void initToolMaterials() {
 		if (isRegistrable("gold")) {
 			ArsenalMaterial gold = new ArsenalMaterial("gold", 0xeaee57);
 			setCraftability(gold, "ingotGold", TinkerFluids.gold);
@@ -121,6 +126,42 @@ public class ArsenalToolMaterials {
 			invar.setRepresentativeItem(OreDictionary.getOres("ingotInvar").get(0));
 			//TinkerRegistry.addMaterial(invar);
 		}
+
+		if (Loader.isModLoaded("thermalfoundation")) {
+			Item materialItem = Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation("thermalfoundation:material")));
+
+			if (isRegistrable("blizz_rod")) {
+				ArsenalMaterial blizz = new ArsenalMaterial("blizz_rod", 0xC6F2F2);
+				ItemStack blizzStack = new ItemStack(materialItem, 1, 2048);
+				setCraftability(blizz, blizzStack);
+				blizz.addTrait(TinkerTraits.hovering, PART_SHAFT);
+				blizz.addTrait(TinkerTraits.freezing, PART_SHAFT);
+				addShaftStats(blizz, 0.8f, 1);
+				blizz.setRepresentativeItem(blizzStack);
+				TinkerRegistry.addMaterial(blizz);
+			}
+
+			if (isRegistrable("blitz_rod")) {
+				ArsenalMaterial blitz = new ArsenalMaterial("blitz_rod", 0xD1DD4E);
+				ItemStack blitzStack = new ItemStack(materialItem, 1, 2050);
+				setCraftability(blitz, blitzStack);
+				blitz.addTrait(ArsenalToolTraits.SWIFT_FLIGHT);
+				addShaftStats(blitz, 0.9f, 0);
+				blitz.setRepresentativeItem(blitzStack);
+				TinkerRegistry.addMaterial(blitz);
+			}
+
+			if (isRegistrable("basalz_rod")) {
+				ArsenalMaterial basalz = new ArsenalMaterial("basalz_rod", 0x696055);
+				ItemStack basalzStack = new ItemStack(materialItem, 1, 2052);
+				setCraftability(basalz, basalzStack);
+				basalz.addTrait(TinkerTraits.hovering, PART_SHAFT);
+				basalz.addTrait(ArsenalToolTraits.GROUNDING, PART_SHAFT);
+				addShaftStats(basalz, 1.0f, 0);
+				basalz.setRepresentativeItem(basalzStack);
+				TinkerRegistry.addMaterial(basalz);
+			}
+		}
 	}
 
 	protected static boolean isRegistrable(String id) {
@@ -151,6 +192,12 @@ public class ArsenalToolMaterials {
 			material.setCraftable(true).setCastable(false);
 			TinkerRegistry.integrate(material, suffix);
 		}
+	}
+
+	protected static void setCraftability(Material material, ItemStack item) {
+		material.addItem(item, 1, 1);
+		material.setCraftable(true).setCastable(false);
+		TinkerRegistry.integrate(material);
 	}
 
 	@Deprecated
@@ -205,7 +252,11 @@ public class ArsenalToolMaterials {
 	private static void addBowstringStats() {
 	}
 
-	private static void addShaftStats() {
+	private static void addShaftStats(Material material, float modifier, int bonusAmmo) {
+		TinkerRegistry.addMaterialStats(
+				material,
+				new ArrowShaftMaterialStats(modifier, bonusAmmo)
+		);
 	}
 
 	private static void addFletchingStats() {

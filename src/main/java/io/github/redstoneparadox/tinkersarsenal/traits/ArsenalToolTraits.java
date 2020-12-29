@@ -1,9 +1,6 @@
 package io.github.redstoneparadox.tinkersarsenal.traits;
 
-import io.github.redstoneparadox.tinkersarsenal.traits.tooltraits.TraitDiamondEdge;
-import io.github.redstoneparadox.tinkersarsenal.traits.tooltraits.TraitMalleable;
-import io.github.redstoneparadox.tinkersarsenal.traits.tooltraits.TraitMissingno;
-import io.github.redstoneparadox.tinkersarsenal.traits.tooltraits.TraitResilience;
+import io.github.redstoneparadox.tinkersarsenal.traits.tooltraits.*;
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.traits.AbstractTrait;
 
@@ -15,11 +12,16 @@ public class ArsenalToolTraits {
     public static final AbstractTrait DIAMOND_EDGE = new TraitDiamondEdge();
     public static final AbstractTrait RESILIENCE = new TraitResilience();
     public static final AbstractTrait MALLEABLE = new TraitMalleable();
+    // Shaft traits
+    public static final AbstractTrait SWIFT_FLIGHT = new TraitSwiftFlight();
+    public static final AbstractTrait GROUNDING = new TraitGrounding();
 
     public static void initToolTraits() {
         TinkerRegistry.addTrait(MISSINGNO);
         TinkerRegistry.addTrait(DIAMOND_EDGE);
         TinkerRegistry.addTrait(RESILIENCE);
         TinkerRegistry.addTrait(MALLEABLE);
+        TinkerRegistry.addTrait(SWIFT_FLIGHT);
+        TinkerRegistry.addTrait(GROUNDING);
     }
 }

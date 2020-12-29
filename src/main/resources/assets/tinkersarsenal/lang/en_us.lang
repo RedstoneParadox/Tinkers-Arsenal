@@ -41,20 +41,29 @@ material.iridium.name=Iridium
 material.mithril.name=Mithril
 material.invar.name=Invar
 
+# Thermal Expansion Materials
+material.blizz_rod.name=Blizz Rod
+material.blitz_rod.name=Blitz Rod
+material.basalz_rod.name=Basalz Rod
+
 #Tool Traits
 
+modifier.crumpling_armor.name=Crumpling
+modifier.crumpling_armor.desc=§oImpact Absorbent!§r\nLess damage to you, more damage to your armor.
 modifier.diamond_edge.name=Diamond Edge
 modifier.diamond_edge.desc=§oSo sharp!§r\nCan better cut through armor if you hit it at just the right angle.
 modifier.fire_resistance.name=Fire Resistance
-modifier.fire_resistance.des=§oDon't Burn Me!§r\nFor those days when you find yourself on fire.
+modifier.fire_resistance.dess=§oDon't Burn Me!§r\nFor those days when you find yourself on fire.
+modifier.grouding.name=Grounding.
+modifier.grounding.desc=§oDown to earth!§r\n
 modifier.resilience.name=Resilience
 modifier.resilience.desc=§oTougher than Tough!§r\nThe resilience is strong with this one.
 modifier.malleable.name=Malleable
 modifier.malleable.desc=§oMalleability = More effective modifiers!§r\nI mean, why else would you make tools out of this?
-modifier.crumpling_armor.name=Crumpling
-modifier.crumpling_armor.desc=§oImpact Absorbent!§r\nLess damage to you, more damage to your armor.
 modifier.missingno.name=Misingno!
 modifier.misingno.desc=§oNot a gltich...§r\n...just a placeholder.
+modifier.swift_flight.name=Swift Flight
+modifier.swift_flight.desc=§oSoars like a bird!§r\nMoves faster than other projectiles.
 
 #Armor Traits
 

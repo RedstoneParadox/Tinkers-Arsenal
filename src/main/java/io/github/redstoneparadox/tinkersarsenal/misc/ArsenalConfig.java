@@ -95,8 +95,8 @@ public class ArsenalConfig {
         @Config.Comment({disableText + "Blitz Rod" + shaftText + notImp})
         public boolean blitz = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Baltz Rod" + shaftText + notImp})
-        public boolean baltz = true;
+        @Config.Comment({disableText + "Basalz Rod" + shaftText + notImp})
+        public boolean basalz = true;
     }
 
 
@@ -131,7 +131,7 @@ public class ArsenalConfig {
         //Thermal Foundation Shaft Materials:
         map.put("blizz_rod", THERMAL_EXPANSION_CATEGORY.blizz);
         map.put("blitz_rod", THERMAL_EXPANSION_CATEGORY.blitz);
-        map.put("baltz_rod", THERMAL_EXPANSION_CATEGORY.baltz);
+        map.put("basalz_rod", THERMAL_EXPANSION_CATEGORY.basalz);
         return map;
     }
 }
