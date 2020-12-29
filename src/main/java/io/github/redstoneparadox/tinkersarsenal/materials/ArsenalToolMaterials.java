@@ -43,7 +43,7 @@ public class ArsenalToolMaterials {
 			ArsenalMaterial gold = new ArsenalMaterial("gold", 0xeaee57);
 			setCraftability(gold, "ingotGold", TinkerFluids.gold);
 			gold.addTrait(ArsenalToolTraits.MALLEABLE, PART_HEAD);
-			gold.addTrait(ArsenalToolTraits.MALLEABLE, PART_EXTRA);
+			addTraits(gold, ArsenalToolTraits.MALLEABLE);
 			addStats(gold, 14, 12.00f, 2.00f, HV0ROCK, 0.1f, -10, -7, 0.5f, 1.5f, 1f);
 			gold.setRepresentativeItem(new ItemStack(Items.GOLD_INGOT));
 			TinkerRegistry.addMaterial(gold);
@@ -61,12 +61,12 @@ public class ArsenalToolMaterials {
 		}
 
 		if (isRegistrable("tin") && OreDictionary.doesOreNameExist("ingotTin")) {
-			ArsenalMaterial tin = new ArsenalMaterial("tin", 0xC3E6E6);
-			setCraftability(tin, "ingotTin");
-			addTraits(tin, ArsenalToolTraits.MISSINGNO);
-			addStats(tin, 75, 4.50f, 4.00f, HV1FE, 0.5f, -25, 75, 0.5f, 1.5f, 1.75f);
+			ArsenalMaterial tin = new ArsenalMaterial("tin", 0xBDD1DE);
+			setCraftability(tin, "ingotTin", TinkerFluids.tin);
+			tin.addTrait(TinkerTraits.cheap);
+			addStats(tin, 85, 4.50f, 4.00f, HV1FE, 0.5f, -25, 75, 0.5f, 1.5f, 1.5f);
 			tin.setRepresentativeItem(OreDictionary.getOres("ingotTin").get(0));
-			//TinkerRegistry.addMaterial(tin);
+			TinkerRegistry.addMaterial(tin);
 		}
 
 		if (isRegistrable("aluminum") && OreDictionary.doesOreNameExist("ingotAluminum")) {

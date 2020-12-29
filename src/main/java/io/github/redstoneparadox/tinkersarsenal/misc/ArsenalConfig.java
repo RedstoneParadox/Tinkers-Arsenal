@@ -53,7 +53,7 @@ public class ArsenalConfig {
 
     public static class OreDictionaryCategory {
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Tin." + notImp})
+        @Config.Comment({disableText + "Tin."})
         public boolean tin = true;
         @Config.RequiresMcRestart
         @Config.Comment({disableText + "Aluminum."})

@@ -39,6 +39,7 @@ public class ArsenalArmorMaterials {
 
 		if (isRegistrable("tin")) {
 			Material tin = TinkerRegistry.getMaterial("tin");
+			tin.addTrait(ArsenalArmorTraits.ANTI_CORROSIVE, PART_CORE);
 			addTraits(tin, ArsenalArmorTraits.ANTI_CORROSIVE);
 			addArmorStats(tin, 1f, 9f, 0.5f, 1f, 0f, 1f);
 		}

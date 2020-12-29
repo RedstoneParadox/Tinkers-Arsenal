@@ -74,4 +74,4 @@ modifier.resilience_armor.desc=§oTougher than Tough!§r\nThe resilience is stro
 modifier.rigidity_armor.name=Rigidity
 modifier.rigidity_armor.desc=§oNot so easily scratched...§r\nTry not to get an itch!
 modifier.anti_corrosive_armor.name=Anti-Corrosive
-modifier.anti_corrosive_armor.desc=§oMonarchies can be corroded...§r\nBut nobel metals cannot?
+modifier.anti_corrosive_armor.desc=§oOpposite of Toxic!§r\nProtection against corrosive status effects...
