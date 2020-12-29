@@ -146,7 +146,7 @@ public class ArsenalToolMaterials {
 				ItemStack blitzStack = new ItemStack(materialItem, 1, 2050);
 				setCraftability(blitz, blitzStack);
 				blitz.addTrait(ArsenalToolTraits.SWIFT_FLIGHT);
-				addShaftStats(blitz, 0.9f, 0);
+				addShaftStats(blitz, 0.9f, 1);
 				blitz.setRepresentativeItem(blitzStack);
 				TinkerRegistry.addMaterial(blitz);
 			}
@@ -156,8 +156,8 @@ public class ArsenalToolMaterials {
 				ItemStack basalzStack = new ItemStack(materialItem, 1, 2052);
 				setCraftability(basalz, basalzStack);
 				basalz.addTrait(TinkerTraits.hovering, PART_SHAFT);
-				basalz.addTrait(ArsenalToolTraits.GROUNDING, PART_SHAFT);
-				addShaftStats(basalz, 1.0f, 0);
+				basalz.addTrait(ArsenalToolTraits.HARD_HITTING, PART_SHAFT);
+				addShaftStats(basalz, 0.8f, 1);
 				basalz.setRepresentativeItem(basalzStack);
 				TinkerRegistry.addMaterial(basalz);
 			}

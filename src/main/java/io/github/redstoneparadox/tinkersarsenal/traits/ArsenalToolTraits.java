@@ -15,6 +15,7 @@ public class ArsenalToolTraits {
     // Shaft traits
     public static final AbstractTrait SWIFT_FLIGHT = new TraitSwiftFlight();
     public static final AbstractTrait GROUNDING = new TraitGrounding();
+    public static final AbstractTrait HARD_HITTING = new TraitHardHitting();
 
     public static void initToolTraits() {
         TinkerRegistry.addTrait(MISSINGNO);
@@ -23,5 +24,6 @@ public class ArsenalToolTraits {
         TinkerRegistry.addTrait(MALLEABLE);
         TinkerRegistry.addTrait(SWIFT_FLIGHT);
         TinkerRegistry.addTrait(GROUNDING);
+        TinkerRegistry.addTrait(HARD_HITTING);
     }
 }
