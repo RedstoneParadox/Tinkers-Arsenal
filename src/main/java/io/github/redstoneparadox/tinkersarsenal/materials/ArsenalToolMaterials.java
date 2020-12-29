@@ -105,10 +105,14 @@ public class ArsenalToolMaterials {
 		}
 
 		if (isRegistrable("iridium") && OreDictionary.doesOreNameExist("ingotIridium")) {
-			ArsenalMaterial iridium = new ArsenalMaterial("iridium", 0xC4C2DC);
+			ArsenalMaterial iridium = new ArsenalMaterial("iridium", 0xEBE9EF);
 			setCraftability(iridium, "ingotIridium");
-			addTraits(iridium, ArsenalToolTraits.MISSINGNO);
-			//TinkerRegistry.addMaterial(iridium);
+			iridium.addTrait(ArsenalToolTraits.HARD_HITTING);
+			iridium.addTrait(TinkerTraits.heavy, PART_HEAD);
+			addTraits(iridium, TinkerTraits.heavy);
+			addStats(iridium, 650, 5, 5.5f, HV2DIA, 1.1f, 300, 650, 0.3f, 1.5f, 1.9f);
+			iridium.setRepresentativeItem("ingotIridium");
+			TinkerRegistry.addMaterial(iridium);
 		}
 
 		if (isRegistrable("mithril") && OreDictionary.doesOreNameExist("ingotMithril")) {

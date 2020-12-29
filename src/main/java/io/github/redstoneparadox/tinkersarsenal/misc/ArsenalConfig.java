@@ -68,7 +68,7 @@ public class ArsenalConfig {
         @Config.Comment({disableText + "Platinum." + notImp})
         public boolean platinum = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Iridium." + notImp})
+        @Config.Comment({disableText + "Iridium."})
         public boolean iridium = true;
         @Config.RequiresMcRestart
         @Config.Comment({disableText + "Mithril/Mana Infused Metal." + notImp})
@@ -89,13 +89,13 @@ public class ArsenalConfig {
         @Config.Comment({disableText + "Enderium." + notImp})
         public boolean enderium = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Blizz Rod" + shaftText + notImp})
+        @Config.Comment({disableText + "Blizz Rod" + shaftText})
         public boolean blizz = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Blitz Rod" + shaftText + notImp})
+        @Config.Comment({disableText + "Blitz Rod" + shaftText})
         public boolean blitz = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Basalz Rod" + shaftText + notImp})
+        @Config.Comment({disableText + "Basalz Rod" + shaftText})
         public boolean basalz = true;
     }
 

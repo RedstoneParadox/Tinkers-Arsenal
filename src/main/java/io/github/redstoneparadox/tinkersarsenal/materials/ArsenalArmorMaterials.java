@@ -1,5 +1,6 @@
 package io.github.redstoneparadox.tinkersarsenal.materials;
 
+import c4.conarm.common.armor.traits.ArmorTraits;
 import c4.conarm.lib.materials.ArmorMaterialType;
 import c4.conarm.lib.materials.CoreMaterialStats;
 import c4.conarm.lib.materials.PlatesMaterialStats;
@@ -69,7 +70,9 @@ public class ArsenalArmorMaterials {
 
 		if (isRegistrable("iridium")) {
 			Material iridium = TinkerRegistry.getMaterial("iridium");
-			addTraits(iridium, ArsenalToolTraits.MISSINGNO);
+			iridium.addTrait(ArmorTraits.heavy, PART_CORE);
+			addTraits(iridium, ArmorTraits.heavy);
+			addArmorStats(iridium, 15f, 20f, 1.2f, 1f, 2f, 1f);
 		}
 
 		if (isRegistrable("mithril")) {
