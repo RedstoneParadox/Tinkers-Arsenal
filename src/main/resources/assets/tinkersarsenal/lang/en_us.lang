@@ -48,14 +48,10 @@ material.basalz_rod.name=Basalz Rod
 
 #Tool Traits
 
-modifier.crumpling_armor.name=Crumpling
-modifier.crumpling_armor.desc=§oImpact Absorbent!§r\nLess damage to you, more damage to your armor.
 modifier.diamond_edge.name=Diamond Edge
 modifier.diamond_edge.desc=§oSo sharp!§r\nCan better cut through armor if you hit it at just the right angle.
 modifier.enduring.name=Enduring
-modifier.enduring.desc=§oDurability Marathon!§r\nTakes less damage over long periods of use.
-modifier.fire_resistance.name=Fire Resistance
-modifier.fire_resistance.dess=§oDon't Burn Me!§r\nFor those days when you find yourself on fire.
+modifier.enduring.desc=§oDurability Marathon!§r\nTakes less damage over long periods of continuous use.
 modifier.grounding.name=Grounding
 modifier.grounding.desc=§oDown to earth!§r\n
 modifier.hard_hitting.name=Hard Hitting
@@ -71,11 +67,15 @@ modifier.swift_flight.desc=§oSoars like a bird!§r\nMoves faster than other pro
 
 #Armor Traits
 
+modifier.anti_corrosive_armor.name=Anti-Corrosive
+modifier.anti_corrosive_armor.desc=§oOpposite of Toxic!§r\nProtection against corrosive status effects...
+modifier.crumpling_armor.name=Crumpling
+modifier.crumpling_armor.desc=§oImpact Absorbent!§r\nLess damage to you, more damage to your armor.
 modifier.enduring_armor.name=Enduring
-modifier.enduring_armor.desc=§oDurability Marathon!§r\nTakes less damage over long periods of use.
+modifier.enduring_armor.desc=§oDurability Marathon!§r\nTakes less damage over long periods continuous of use.
+modifier.fire_resistance_armor.name=Fire Resistance
+modifier.fire_resistance_armor.desc=§oDon't Burn Me!§r\nFor those days when you find yourself on fire.
 modifier.resilience_armor.name=Resilience
 modifier.resilience_armor.desc=§oTougher than Tough!§r\nThe resilience is strong with this one.
 modifier.rigidity_armor.name=Rigidity
 modifier.rigidity_armor.desc=§oNot so easily scratched...§r\nTry not to get an itch!
-modifier.anti_corrosive_armor.name=Anti-Corrosive
-modifier.anti_corrosive_armor.desc=§oOpposite of Toxic!§r\nProtection against corrosive status effects...
