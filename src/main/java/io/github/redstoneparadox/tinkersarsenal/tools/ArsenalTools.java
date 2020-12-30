@@ -68,7 +68,7 @@ public class ArsenalTools {
 
         registerTool(boomstick, true, registry);
         registerTool(boomstickShot, true, registry);
-        // registerTool(shears, false, registry);
+        registerTool(shears, false, registry);
 
         registerToolBuilding();
     }
@@ -97,12 +97,10 @@ public class ArsenalTools {
         boomstickShotInfo.addSlotPosition(32, 41 + 12);
         TinkerRegistryClient.addToolBuilding(boomstickShotInfo);
 
-        /*
         ToolBuildGuiInfo shearInfo = new ToolBuildGuiInfo(shears);
-        shearInfo.addSlotPosition(32 - 12, 41 - 12); // top left
-        shearInfo.addSlotPosition(32 - 12, 41 + 12); // bot right
+        shearInfo.addSlotPosition(32 + 12, 41 - 12); // top left
+        shearInfo.addSlotPosition(32 - 12, 41 + 12); // bot left
         TinkerRegistryClient.addToolBuilding(shearInfo);
-         */
     }
 
     protected static void registerToolGUI(ToolCore toolCore, ArrayList<Vector2> vector2s) {
