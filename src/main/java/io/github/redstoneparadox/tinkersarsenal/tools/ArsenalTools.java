@@ -98,8 +98,8 @@ public class ArsenalTools {
         TinkerRegistryClient.addToolBuilding(boomstickShotInfo);
 
         ToolBuildGuiInfo shearInfo = new ToolBuildGuiInfo(shears);
-        shearInfo.addSlotPosition(32 + 12, 41 - 12); // top left
         shearInfo.addSlotPosition(32 - 12, 41 + 12); // bot left
+        shearInfo.addSlotPosition(32 + 12, 41 - 12); // top left
         TinkerRegistryClient.addToolBuilding(shearInfo);
     }
 

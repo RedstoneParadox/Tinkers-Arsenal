@@ -29,7 +29,7 @@ import java.util.Random;
  */
 public class ToolShears extends TinkerToolCore {
     public ToolShears() {
-        super(PartMaterialType.head(TinkerTools.knifeBlade), PartMaterialType.handle(TinkerTools.binding));
+        super(PartMaterialType.handle(TinkerTools.binding), PartMaterialType.head(TinkerTools.knifeBlade));
         this.setRegistryName("toolshears").setTranslationKey("toolshears");
 
         addCategory(Category.NO_MELEE);
@@ -57,8 +57,8 @@ public class ToolShears extends TinkerToolCore {
     public ToolNBT buildTagData(List<Material> materials) {
         ToolNBT data = new ToolNBT();
 
-        data.head(materials.get(0).getStatsOrUnknown(MaterialTypes.HEAD));
-        data.handle(materials.get(1).getStatsOrUnknown(MaterialTypes.HANDLE));
+        data.handle(materials.get(0).getStatsOrUnknown(MaterialTypes.HANDLE));
+        data.head(materials.get(1).getStatsOrUnknown(MaterialTypes.HEAD));
 
         return data;
     }
