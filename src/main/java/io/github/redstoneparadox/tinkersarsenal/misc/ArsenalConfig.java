@@ -59,7 +59,7 @@ public class ArsenalConfig {
         @Config.Comment({disableText + "Aluminum."})
         public boolean aluminum = true;
         @Config.RequiresMcRestart
-        @Config.Comment({disableText + "Constantan." + notImp})
+        @Config.Comment({disableText + "Constantan."})
         public boolean constantan = true;
         @Config.RequiresMcRestart
         @Config.Comment({disableText + "Nickel." + notImp})

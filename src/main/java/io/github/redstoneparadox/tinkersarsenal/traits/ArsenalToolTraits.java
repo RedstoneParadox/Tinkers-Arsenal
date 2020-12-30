@@ -13,6 +13,8 @@ public class ArsenalToolTraits {
     public static final AbstractTrait MALLEABLE = new TraitMalleable(1);
     public static final AbstractTrait MISSINGNO = new TraitMissingno();
     public static final AbstractTrait RESILIENCE = new TraitResilience();
+    public static final AbstractTrait THERMALLY_ACTIVE_1 = new TraitThermallyActive(1);
+    public static final AbstractTrait THERMALLY_ACTIVE_2 = new TraitThermallyActive(2);
     // Shaft traits
     public static final AbstractTrait GROUNDING = new TraitGrounding();
     public static final AbstractTrait HARD_HITTING = new TraitHardHitting();
@@ -24,6 +26,8 @@ public class ArsenalToolTraits {
         TinkerRegistry.addTrait(MALLEABLE);
         TinkerRegistry.addTrait(MISSINGNO);
         TinkerRegistry.addTrait(RESILIENCE);
+        TinkerRegistry.addTrait(THERMALLY_ACTIVE_1);
+        TinkerRegistry.addTrait(THERMALLY_ACTIVE_2);
 
         TinkerRegistry.addTrait(GROUNDING);
         TinkerRegistry.addTrait(HARD_HITTING);

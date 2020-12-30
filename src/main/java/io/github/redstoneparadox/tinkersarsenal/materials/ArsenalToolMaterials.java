@@ -79,12 +79,13 @@ public class ArsenalToolMaterials {
 		}
 
 		if (isRegistrable("constantan") && OreDictionary.doesOreNameExist("ingotConstantan")) {
-			ArsenalMaterial constantan = new ArsenalMaterial("constantan", 0xF9D384);
+			ArsenalMaterial constantan = new ArsenalMaterial("constantan", 0xE4BB4D);
 			setCraftability(constantan, "ingotConstantan");
-			addTraits(constantan, ArsenalToolTraits.MISSINGNO);
+			constantan.addTrait(ArsenalToolTraits.THERMALLY_ACTIVE_2, PART_HEAD);
+			addTraits(constantan, ArsenalToolTraits.THERMALLY_ACTIVE_1);
 			addStats(constantan, 175, 6, 4.50f, HV2DIA, 1.3f, 150, 100, 0.5f, 1.5f, 1.75f);
-			constantan.setRepresentativeItem(OreDictionary.getOres("ingotConstantan").get(0));
-			//TinkerRegistry.addMaterial(constantan);
+			constantan.setRepresentativeItem("ingotConstantan");
+			TinkerRegistry.addMaterial(constantan);
 		}
 
 		if (isRegistrable("nickel") && OreDictionary.doesOreNameExist("ingotNickle")) {
