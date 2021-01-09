@@ -8,7 +8,7 @@ import com.google.common.collect.ImmutableList;
 public class ArsenalProperties {
     public static final String MOD_ID = "tinkersarsenal";
     public static final String MOD_NAME = "Tinkers' Arsenal";
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "0.7.0";
     public static final String DEPENDENCIES = dependencies();
     public static final String CLIENT_PROXY = "io.github.redstoneparadox.tinkersarsenal.proxy.ClientProxy";
     public static final String SERVER_PROXY = "io.github.redstoneparadox.tinkersarsenal.proxy.ServerProxy";
