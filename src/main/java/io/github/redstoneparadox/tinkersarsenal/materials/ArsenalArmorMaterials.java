@@ -1,22 +1,7 @@
 package io.github.redstoneparadox.tinkersarsenal.materials;
 
-import c4.conarm.common.armor.traits.ArmorTraits;
-import c4.conarm.lib.materials.ArmorMaterialType;
-import c4.conarm.lib.materials.CoreMaterialStats;
-import c4.conarm.lib.materials.PlatesMaterialStats;
-import c4.conarm.lib.materials.TrimMaterialStats;
-import io.github.redstoneparadox.tinkersarsenal.TinkersArsenal;
-import io.github.redstoneparadox.tinkersarsenal.misc.ArsenalConfig;
-import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalArmorTraits;
-import io.github.redstoneparadox.tinkersarsenal.traits.ArsenalToolTraits;
-import net.minecraftforge.fluids.Fluid;
-import slimeknights.tconstruct.library.TinkerRegistry;
-import slimeknights.tconstruct.library.materials.Material;
-import slimeknights.tconstruct.library.traits.AbstractTrait;
-
-import java.util.ArrayList;
-
 public class ArsenalArmorMaterials {
+	/*
 	protected static final String PART_CORE = ArmorMaterialType.CORE;
 	protected static final String PART_PLATE = ArmorMaterialType.PLATES;
 	protected static final String PART_TRIM = ArmorMaterialType.TRIM;
@@ -176,4 +161,5 @@ public class ArsenalArmorMaterials {
 			return null;
 		}
 	}
+	*/
 }
